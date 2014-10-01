@@ -19,8 +19,13 @@ from bokeh import widgets as bkw
 
 import pandas as pd
 import time
+from pprint import pprint
+from sklearn.preprocessing import MinMaxScaler
 
 class ScatterBias(object):
+    maxval = 100.0
+    own_update = False
+
     def __init__(self):
         ##############################
         ## load Bokeh page
@@ -36,12 +41,20 @@ class ScatterBias(object):
         ## load DataFrame
         ##############################
         df = pd.read_csv('data/crime2013_tagged_clean.csv', index_col='full_name')
-        cols = {'x': 'Robbery', 
+        self.cols = {'x': 'Robbery', 
                 'y': 'Violent crime total',
-                'ctrl': 'Population'
+                'pop': 'Population'
                 }
+
+        cols = self.cols
+
         df2= df.ix[:, cols.values()]
         df2.dropna(axis=0, inplace=True)
+        
+        mms = MinMaxScaler()
+        df2 = pd.DataFrame(mms.fit_transform(df2), columns=df2.columns)
+
+        self.df0 = df2.copy()
 
         source = ColumnDataSource(df2)
 
@@ -49,7 +62,9 @@ class ScatterBias(object):
         ## draw scatterplot
         ##############################
 
-        bk.figure()
+        bk.figure(x_axis_label=cols['x'],
+                y_axis_label=cols['y'],
+                title='Bias Adjusted %s by %s'%(cols['y'], cols['pop']))
         sc = bk.scatter(x=cols['x'], y=cols['y'], source=source)
 
         ##############################
@@ -60,19 +75,32 @@ class ScatterBias(object):
         self.ds = renderer.data_source
 
         ##############################
-        ## initiate slider
+        ## initiate textbox + slider
         ##############################
-        beta = .5
-        slider = bkw.Slider(start=1, end=100, value=beta, step=1, 
+        self.widgets = []
+        default_val = 0
+
+        text = bkw.TextInput(
+                value=str(default_val), 
+                title='Population Beta:')
+        text.on_change('value', self.on_text_change)
+        
+        slider = bkw.Slider(
+                start=-self.maxval, 
+                end=self.maxval, 
+                value=default_val, 
+                step=1, 
                 title='Population Beta')
         slider.on_change('value', self.on_slider_change)
 
+        self.widgets.append(text)
+        self.widgets.append(slider)
 
         ##############################
         ## setup layout
         ##############################
-
-        layout = bkw.VBox(children=[sc, slider])
+        inputs = bkw.HBox(children=[text, slider])
+        layout = bkw.VBox(children=[sc, inputs])
         self.document.add(layout)
 
         ##############################
@@ -81,23 +109,44 @@ class ScatterBias(object):
         self.session.store_document(self.document)
         link = self.session.object_link(self.document.context)
         view(link)
-        self.session.poll_document(self.document)
+        self.session.poll_document(self.document, interval=.5)
 
-    # bokeh.output_server
-    # bokeh.plotting.scatter
-    # pandas.DataFrame.rename
-    def update_data(self, amt):
+    def update_data(self, val):
+        amt = val/self.maxval
+        import time
         #TODO: change this from random.random
-        self.ds.data['Population'] = [x*np.random.random() for x in 
-                self.ds.data['Population']]
-        #session.store_objects(source)
+        c = self.cols
+        t0 = time.time()
+
+        #old_ys = self.ds.data[c['y']][:]
+        self.ds.data[c['y']] = [ 
+                row[c['y']]/
+                (1 + row[c['x']] + amt*row[c['pop']])
+            for i, row in self.df0.iterrows()]
+        
+
+        self.session.store_objects(self.ds)
         self.session.store_document(self.document)
-        print('Update data: ', amt)
+        t1 = time.time()
+        print(t1-t0)
+        
+        # for seeing how much changed:
+        #for i in range(len(old_ys)):
+        #    print(i, self.ds.data[c['pop']][i], self.ds.data[c['y']][i] - 
+        #           old_ys[i])
 
     def on_slider_change(self, obj, attr, old, new):
-        print('Slider changed: ', new)
-        self.update_data(new/100.0)
+        self.update_data(new)
     
+    def on_text_change(self, obj, attr, old, new):
+        try:
+            n = int(new)
+            n = max(n, -self.maxval)
+            n = min(n, self.maxval)
+
+            self.update_data(n)
+        except ValueError:
+            return
 
 if __name__ == '__main__':
     sb = ScatterBias()
