@@ -1,0 +1,593 @@
+Agency,State,Months,Population,Violent crime total,Murder and nonnegligent Manslaughter,Forcible rape,Robbery,Aggravated assault,Property crime total,Burglary,Larceny-theft,Motor vehicle theft,Violent Crime rate,Murder and nonnegligent manslaughter rate,Forcible rape rate,Robbery rate,Aggravated assault rate,Property crime rate,Burglary rate,Larceny-theft rate,Motor vehicle theft rate,name,full_name,gid
+Autauga County Sheriff Department,AL,12,,81.0,0,9.0,5,67,512.0,186,291.0,35.0,,,,,,,,,,autauga county,"autauga county,AL",05000US01001
+Baldwin County Sheriff Deptartment,AL,12,,130.0,3,9.0,27,91,870.0,317,496.0,57.0,,,,,,,,,,baldwin county,"baldwin county,AL",05000US01003
+Barbour County Sheriff Deptartment,AL,12,,21.0,0,1.0,2,18,87.0,33,48.0,6.0,,,,,,,,,,barbour county,"barbour county,AL",05000US01005
+Bibb County Sheriff Department,AL,12,,18.0,0,4.0,0,14,155.0,73,65.0,17.0,,,,,,,,,,bibb county,"bibb county,AL",05000US01007
+Blount County Sheriff Department,AL,12,,79.0,1,8.0,6,64,959.0,329,573.0,57.0,,,,,,,,,,blount county,"blount county,AL",05000US01009
+Chambers County Sheriff Department,AL,12,,6.0,0,0.0,1,5,89.0,33,54.0,2.0,,,,,,,,,,chambers county,"chambers county,AL",05000US01017
+Chilton County Sheriff Department,AL,12,,78.0,0,6.0,5,67,599.0,234,315.0,50.0,,,,,,,,,,chilton county,"chilton county,AL",05000US01021
+Clarke County Sheriff Department,AL,12,,36.0,0,9.0,3,24,119.0,47,63.0,9.0,,,,,,,,,,clarke county,"clarke county,AL",05000US01025
+Coffee County Sheriff Department,AL,12,,24.0,0,1.0,0,23,161.0,79,70.0,12.0,,,,,,,,,,coffee county,"coffee county,AL",05000US01031
+Colbert County Sheriff Department,AL,12,,36.0,1,5.0,1,29,339.0,141,171.0,27.0,,,,,,,,,,colbert county,"colbert county,AL",05000US01033
+Covington County Sheriff Department,AL,12,,40.0,1,8.0,1,30,328.0,134,173.0,21.0,,,,,,,,,,covington county,"covington county,AL",05000US01039
+Dale County Sheriff Department,AL,12,,61.0,0,4.0,5,52,162.0,42,110.0,10.0,,,,,,,,,,dale county,"dale county,AL",05000US01045
+Dekalb County Sheriff Department,AL,12,,211.0,0,13.0,4,194,937.0,390,471.0,76.0,,,,,,,,,,dekalb county,"dekalb county,AL",05000US01049
+Decatur City Police Dept,AL,12,1752.0,4.0,0,0.0,0,4,34.0,19,12.0,3.0,228.3,0.0,0.0,0.0,228.3,1940.6,1084.5,684.9,171.2,decatur city,"decatur city,AL",16000US0120104
+Elmore County Sheriff Department,AL,12,,52.0,3,13.0,10,26,812.0,339,428.0,45.0,,,,,,,,,,elmore county,"elmore county,AL",05000US01051
+Escambia County Sheriff Department,AL,12,,55.0,2,3.0,1,49,354.0,117,216.0,21.0,,,,,,,,,,escambia county,"escambia county,AL",05000US01053
+Etowah County Sheriff Department,AL,12,,109.0,1,9.0,2,97,598.0,226,324.0,48.0,,,,,,,,,,etowah county,"etowah county,AL",05000US01055
+Houston County Sheriff Department,AL,12,,92.0,2,12.0,9,69,625.0,177,403.0,45.0,,,,,,,,,,houston county,"houston county,AL",05000US01069
+Lauderdale County Sheriff Department,AL,12,,59.0,1,5.0,5,48,371.0,118,225.0,28.0,,,,,,,,,,lauderdale county,"lauderdale county,AL",05000US01077
+Limestone County Sheriff Department,AL,12,,79.0,3,0.0,4,72,544.0,185,331.0,28.0,,,,,,,,,,limestone county,"limestone county,AL",05000US01083
+Macon County Sheriff Department,AL,12,,39.0,1,1.0,2,35,323.0,167,119.0,37.0,,,,,,,,,,macon county,"macon county,AL",05000US01087
+Marengo County Sheriff Department,AL,12,,42.0,3,2.0,0,37,170.0,80,76.0,14.0,,,,,,,,,,marengo county,"marengo county,AL",05000US01091
+Marshall County Sheriff Department,AL,12,,62.0,1,10.0,5,46,708.0,315,357.0,36.0,,,,,,,,,,marshall county,"marshall county,AL",05000US01095
+Morgan County Sheriff Department,AL,10,,27.0,0,3.0,2,22,320.0,148,163.0,9.0,,,,,,,,,,morgan county,"morgan county,AL",05000US01103
+Russell County Sheriff Department,AL,12,,51.0,0,9.0,8,34,483.0,168,281.0,34.0,,,,,,,,,,russell county,"russell county,AL",05000US01113
+Shelby County Sheriff Department,AL,12,,133.0,4,21.0,19,89,1270.0,297,888.0,85.0,,,,,,,,,,shelby county,"shelby county,AL",05000US01117
+St. Clair County Sheriff Department,AL,8,,24.0,2,6.0,0,16,320.0,96,219.0,5.0,,,,,,,,,,st. clair county,"st. clair county,AL",05000US01115
+Talladega County Sheriff Department,AL,12,,71.0,1,3.0,10,57,839.0,286,484.0,69.0,,,,,,,,,,talladega county,"talladega county,AL",05000US01121
+Tallapoosa County Sheriff Department,AL,12,,24.0,1,2.0,1,20,171.0,82,82.0,7.0,,,,,,,,,,tallapoosa county,"tallapoosa county,AL",05000US01123
+Walker County Sheriff Department,AL,12,,99.0,0,5.0,7,87,935.0,370,495.0,70.0,,,,,,,,,,walker county,"walker county,AL",05000US01127
+Winston County Sheriff Department,AL,12,,57.0,1,4.0,2,50,317.0,110,178.0,29.0,,,,,,,,,,winston county,"winston county,AL",05000US01133
+Adams County Sheriff Department,CO,12,,419.0,7,70.0,55,287,2346.0,521,1404.0,421.0,,,,,,,,,,adams county,"adams county,CO",05000US08001
+Arapahoe County Sheriff Department,CO,12,,218.0,1,38.0,31,148,1293.0,358,818.0,117.0,,,,,,,,,,arapahoe county,"arapahoe county,CO",05000US08005
+Denver Police Dept,CO,12,628545.0,3871.0,39,376.0,1165,2291,23343.0,5129,14544.0,3670.0,615.9,6.2,59.8,185.3,364.5,3713.8,816.0,2313.9,583.9,denver,"denver,CO",05000US08031
+Douglas County Sheriff Department,CO,12,,139.0,0,28.0,5,106,1343.0,300,1007.0,36.0,,,,,,,,,,douglas county,"douglas county,CO",05000US08035
+El Paso County,CO,12,,424.0,2,68.0,30,324,2442.0,821,1416.0,205.0,,,,,,,,,,el paso county,"el paso county,CO",05000US08041
+Elbert County Sheriff Department,CO,12,,4.0,0,0.0,0,4,66.0,29,34.0,3.0,,,,,,,,,,elbert county,"elbert county,CO",05000US08039
+Garfield County Sheriff Department,CO,12,,14.0,1,4.0,0,9,165.0,39,116.0,10.0,,,,,,,,,,garfield county,"garfield county,CO",05000US08045
+Baker County Sheriff Department,FL,12,,63.0,0,4.0,9,50,293.0,51,228.0,14.0,,,,,,,,,,baker county,"baker county,FL",05000US12003
+Bay County Sheriff Department,FL,12,,336.0,3,41.0,52,240,2694.0,702,1871.0,121.0,,,,,,,,,,bay county,"bay county,FL",05000US12005
+Bradford County Sheriff Department,FL,12,,86.0,0,11.0,2,73,330.0,163,154.0,13.0,,,,,,,,,,bradford county,"bradford county,FL",05000US12007
+Brevard County Sheriff Department,FL,12,,876.0,13,67.0,101,695,5233.0,1254,3788.0,191.0,,,,,,,,,,brevard county,"brevard county,FL",05000US12009
+Broward County Sheriff Department,FL,12,,335.0,2,23.0,76,234,1113.0,289,770.0,54.0,,,,,,,,,,broward county,"broward county,FL",05000US12011
+Charlotte County Sheriff Department,FL,12,,387.0,1,24.0,33,329,3229.0,861,2252.0,116.0,,,,,,,,,,charlotte county,"charlotte county,FL",05000US12015
+Citrus County Sheriff Department,FL,12,,451.0,5,26.0,57,363,2837.0,737,1971.0,129.0,,,,,,,,,,citrus county,"citrus county,FL",05000US12017
+Clay County Sheriff Department,FL,12,,684.0,5,33.0,71,575,3806.0,732,2959.0,115.0,,,,,,,,,,clay county,"clay county,FL",05000US12019
+Collier County Sheriff Department,FL,12,,785.0,6,39.0,146,594,4776.0,1224,3322.0,230.0,,,,,,,,,,collier county,"collier county,FL",05000US12021
+Columbia County Sheriff Department,FL,12,,261.0,0,14.0,20,227,1178.0,559,583.0,36.0,,,,,,,,,,columbia county,"columbia county,FL",05000US12023
+Dania Police Department,FL,12,30595.0,213.0,1,12.0,64,136,1494.0,300,1053.0,141.0,696.2,3.3,39.2,209.2,444.5,4883.2,980.6,3441.7,460.9,dania,"dania,FL",16000US1216335
+Escambia County Sheriff Department,FL,12,,1960.0,15,132.0,412,1401,11285.0,3156,7579.0,550.0,,,,,,,,,,escambia county,"escambia county,FL",05000US12033
+Flagler County Sheriff Department,FL,12,,204.0,0,5.0,34,165,1680.0,362,1255.0,63.0,,,,,,,,,,flagler county,"flagler county,FL",05000US12035
+Hallandale Police Dept,FL,12,38316.0,287.0,4,11.0,98,174,1863.0,456,1264.0,143.0,749.0,10.4,28.7,255.8,454.1,4862.2,1190.1,3298.9,373.2,hallandale,"hallandale,FL",16000US1228452
+Hardee County Sheriff Department,FL,12,,54.0,1,8.0,9,36,505.0,148,326.0,31.0,,,,,,,,,,hardee county,"hardee county,FL",05000US12049
+Hendry County Sheriff Department,FL,12,,201.0,0,15.0,24,162,988.0,489,452.0,47.0,,,,,,,,,,hendry county,"hendry county,FL",05000US12051
+Hernando County Sheriff Department,FL,12,,437.0,2,40.0,49,346,4168.0,1184,2830.0,154.0,,,,,,,,,,hernando county,"hernando county,FL",05000US12053
+Hialeah Police Dept,FL,12,233107.0,810.0,4,40.0,260,506,7194.0,1048,5409.0,737.0,347.5,1.7,17.2,111.5,217.1,3086.1,449.6,2320.4,316.2,hialeah,"hialeah,FL",16000US1230025
+Highlands County Sheriff Department,FL,12,,203.0,3,19.0,40,141,1908.0,689,1123.0,96.0,,,,,,,,,,highlands county,"highlands county,FL",05000US12055
+Hillsborough County Sheriff Department,FL,12,,2152.0,28,116.0,495,1513,17903.0,4143,12707.0,1053.0,,,,,,,,,,hillsborough county,"hillsborough county,FL",05000US12057
+Indian River County Sheriff Department,FL,12,,319.0,1,15.0,38,265,2461.0,552,1838.0,71.0,,,,,,,,,,indian river county,"indian river county,FL",05000US12061
+Jacksonville,FL,12,840660.0,5189.0,93,341.0,1371,3384,34674.0,7632,25403.0,1639.0,617.3,11.1,40.6,163.1,402.5,4124.6,907.9,3021.8,195.0,jacksonville,"jacksonville,FL",16000US1235050
+Lee County Sheriff Department,FL,12,,1241.0,17,66.0,340,818,8854.0,2771,5482.0,601.0,,,,,,,,,,lee county,"lee county,FL",05000US12071
+Leon County Sheriff Department,FL,12,,240.0,5,13.0,31,191,1577.0,641,837.0,99.0,,,,,,,,,,leon county,"leon county,FL",05000US12073
+Levy County Sheriff Department,FL,12,,87.0,0,18.0,3,66,540.0,183,324.0,33.0,,,,,,,,,,levy county,"levy county,FL",05000US12075
+Manatee County Sheriff Department,FL,12,,1512.0,18,109.0,271,1114,8125.0,2010,5812.0,303.0,,,,,,,,,,manatee county,"manatee county,FL",05000US12081
+Marion County Sheriff Department,FL,12,,1215.0,14,122.0,62,1017,3986.0,1293,2527.0,166.0,,,,,,,,,,marion county,"marion county,FL",05000US12083
+Martin County Sheriff Department,FL,12,,339.0,4,31.0,78,226,2557.0,623,1825.0,109.0,,,,,,,,,,martin county,"martin county,FL",05000US12085
+Miami Police Dept,FL,12,414327.0,4856.0,69,65.0,2096,2626,22271.0,4255,15305.0,2711.0,1172.0,16.7,15.7,505.9,633.8,5375.2,1027.0,3693.9,654.3,miami,"miami,FL",16000US1245025
+Naples City Police Dept,FL,12,20211.0,32.0,0,1.0,5,26,537.0,96,431.0,10.0,158.3,0.0,4.9,24.7,128.6,2657.0,475.0,2132.5,49.5,naples city,"naples city,FL",16000US1247625
+Putnam Police Dept,FL,12,9588.0,29.0,0,6.0,3,20,200.0,51,142.0,7.0,302.5,0.0,62.6,31.3,208.6,2085.9,531.9,1481.0,73.0,putnam,"putnam,FL",05000US12107
+Washington County Sheriff Department,FL,12,,16.0,0,3.0,0,13,76.0,15,56.0,5.0,,,,,,,,,,washington county,"washington county,FL",05000US12133
+Athens-Clarke County Police Department,GA,12,117457.0,455.0,5,48.0,158,244,4601.0,1149,3210.0,242.0,387.4,4.3,40.9,134.5,207.7,3917.2,978.2,2732.9,206.0,athens-clarke county,"athens-clarke county,GA",16000US1303440
+Barrow County Sheriff Department,GA,12,,269.0,0,9.0,9,251,866.0,231,572.0,63.0,,,,,,,,,,barrow county,"barrow county,GA",05000US13013
+Bibb County Sheriff Department,GA,12,,207.0,3,13.0,40,151,2370.0,542,1649.0,179.0,,,,,,,,,,bibb county,"bibb county,GA",05000US13021
+Bryan County Sheriff Department,GA,12,,41.0,0,2.0,4,35,284.0,56,217.0,11.0,,,,,,,,,,bryan county,"bryan county,GA",05000US13029
+Bulloch County Sheriff Department,GA,12,,29.0,2,5.0,10,12,734.0,192,503.0,39.0,,,,,,,,,,bulloch county,"bulloch county,GA",05000US13031
+Burke County Sheriff Department,GA,7,,71.0,1,0.0,0,70,256.0,88,162.0,6.0,,,,,,,,,,burke county,"burke county,GA",05000US13033
+Butts County Sheriff Department,GA,12,,40.0,0,9.0,9,22,406.0,96,268.0,42.0,,,,,,,,,,butts county,"butts county,GA",05000US13035
+Camden County Sheriff Department,GA,12,,50.0,0,0.0,6,44,387.0,87,289.0,11.0,,,,,,,,,,camden county,"camden county,GA",05000US13039
+Carroll County Sheriff Department,GA,12,,113.0,1,17.0,16,79,1460.0,517,847.0,96.0,,,,,,,,,,carroll county,"carroll county,GA",05000US13045
+Catoosa County Sheriff Department,GA,12,,84.0,1,6.0,14,63,1033.0,246,682.0,105.0,,,,,,,,,,catoosa county,"catoosa county,GA",05000US13047
+Chattooga County Sheriff Department,GA,12,,38.0,0,1.0,0,37,391.0,130,250.0,11.0,,,,,,,,,,chattooga county,"chattooga county,GA",05000US13055
+Cherokee County Sheriff Department,GA,12,,117.0,3,24.0,17,73,1854.0,604,1126.0,124.0,,,,,,,,,,cherokee county,"cherokee county,GA",05000US13057
+Cobb County Police Department,GA,12,,974.0,11,86.0,397,480,10658.0,3055,6856.0,747.0,,,,,,,,,,cobb county,"cobb county,GA",05000US13067
+Coffee County Sheriff Department,GA,12,,65.0,3,4.0,11,47,840.0,221,588.0,31.0,,,,,,,,,,coffee county,"coffee county,GA",05000US13069
+Columbia County Sheriff Department,GA,12,,68.0,1,10.0,20,37,2297.0,396,1804.0,97.0,,,,,,,,,,columbia county,"columbia county,GA",05000US13073
+Coweta County Sheriff Department,GA,12,,86.0,0,9.0,17,60,1419.0,339,1000.0,80.0,,,,,,,,,,coweta county,"coweta county,GA",05000US13077
+Crisp County Sheriff Department,GA,12,,20.0,0,0.0,8,12,371.0,76,284.0,11.0,,,,,,,,,,crisp county,"crisp county,GA",05000US13081
+Dawson County Sheriff Department,GA,12,,11.0,0,0.0,2,9,374.0,69,281.0,24.0,,,,,,,,,,dawson county,"dawson county,GA",05000US13085
+Dekalb County Public Safety Department,GA,12,,3420.0,76,122.0,1787,1435,30285.0,9468,15995.0,4822.0,,,,,,,,,,dekalb county,"dekalb county,GA",05000US13089
+Dodge County Sheriff Department,GA,12,,31.0,0,4.0,0,27,376.0,114,250.0,12.0,,,,,,,,,,dodge county,"dodge county,GA",05000US13091
+Dougherty County Police Department,GA,12,,40.0,0,3.0,9,28,443.0,171,235.0,37.0,,,,,,,,,,dougherty county,"dougherty county,GA",05000US13095
+Effingham,GA,12,,38.0,1,14.0,4,19,242.0,159,61.0,22.0,,,,,,,,,,effingham,"effingham,GA",05000US13103
+Elbert County Sheriff Department,GA,12,,31.0,2,2.0,7,20,455.0,127,301.0,27.0,,,,,,,,,,elbert county,"elbert county,GA",05000US13105
+Emanuel County Sheriff Department,GA,12,,3.0,0,0.0,0,3,366.0,90,242.0,34.0,,,,,,,,,,emanuel county,"emanuel county,GA",05000US13107
+Fannin County Sheriff Department,GA,12,,69.0,0,3.0,0,66,364.0,134,203.0,27.0,,,,,,,,,,fannin county,"fannin county,GA",05000US13111
+Fayette County Sheriff Department,GA,12,,43.0,3,4.0,7,29,579.0,182,353.0,44.0,,,,,,,,,,fayette county,"fayette county,GA",05000US13113
+Floyd County Police Department,GA,12,,126.0,1,9.0,11,105,1358.0,384,918.0,56.0,,,,,,,,,,floyd county,"floyd county,GA",05000US13115
+Franklin County Sheriff Department,GA,12,,9.0,0,1.0,6,2,352.0,115,216.0,21.0,,,,,,,,,,franklin county,"franklin county,GA",05000US13119
+Fulton County Police Department,GA,12,,805.0,18,34.0,379,374,5855.0,1627,3458.0,770.0,,,,,,,,,,fulton county,"fulton county,GA",05000US13121
+Gilmer County Sheriff Department,GA,12,,54.0,0,5.0,0,49,407.0,117,279.0,11.0,,,,,,,,,,gilmer county,"gilmer county,GA",05000US13123
+Glynn County Police Department,GA,12,,230.0,2,10.0,64,154,2680.0,652,1947.0,81.0,,,,,,,,,,glynn county,"glynn county,GA",05000US13127
+Grady County Sheriff Department,GA,12,,20.0,0,0.0,2,18,168.0,45,112.0,11.0,,,,,,,,,,grady county,"grady county,GA",05000US13131
+Gwinnett County Police Department,GA,12,,1578.0,34,161.0,662,721,14179.0,4100,8984.0,1095.0,,,,,,,,,,gwinnett county,"gwinnett county,GA",05000US13135
+Habersham County Sheriff Department,GA,12,,33.0,0,3.0,0,30,495.0,203,267.0,25.0,,,,,,,,,,habersham county,"habersham county,GA",05000US13137
+Hall County Sheriff Department,GA,12,,187.0,4,20.0,37,126,2357.0,626,1506.0,225.0,,,,,,,,,,hall county,"hall county,GA",05000US13139
+Haralson County Sheriff Department,GA,12,,123.0,1,1.0,1,120,466.0,237,171.0,58.0,,,,,,,,,,haralson county,"haralson county,GA",05000US13143
+Harris County Sheriff Department,GA,12,,19.0,0,0.0,0,19,209.0,51,151.0,7.0,,,,,,,,,,harris county,"harris county,GA",05000US13145
+Hart County Sheriff Department,GA,12,,65.0,0,3.0,4,58,477.0,141,328.0,8.0,,,,,,,,,,hart county,"hart county,GA",05000US13147
+Henry Police Dept,GA,12,,286.0,5,26.0,94,161,4655.0,1378,2888.0,389.0,,,,,,,,,,henry,"henry,GA",05000US13151
+Houston County Sheriff Department,GA,12,,59.0,2,6.0,9,42,996.0,233,730.0,33.0,,,,,,,,,,houston county,"houston county,GA",05000US13153
+Jones County Sheriff Department,GA,12,,19.0,1,2.0,2,14,489.0,138,318.0,33.0,,,,,,,,,,jones county,"jones county,GA",05000US13169
+Laurens County Sheriff Department,GA,12,,34.0,3,2.0,7,22,766.0,235,492.0,39.0,,,,,,,,,,laurens county,"laurens county,GA",05000US13175
+Lee County Sheriff Department,GA,12,,92.0,1,1.0,5,85,630.0,150,453.0,27.0,,,,,,,,,,lee county,"lee county,GA",05000US13177
+Liberty County Sheriff Department,GA,12,,62.0,1,3.0,4,54,367.0,107,241.0,19.0,,,,,,,,,,liberty county,"liberty county,GA",05000US13179
+Lookout Mt Police Dept,GA,12,1617.0,0.0,0,0.0,0,0,17.0,6,11.0,0.0,0.0,0.0,0.0,0.0,0.0,1051.3,371.1,680.3,0.0,lookout mt,"lookout mt,GA",04000US30
+Lowndes County Sheriff Department,GA,12,,102.0,1,1.0,6,94,640.0,191,416.0,33.0,,,,,,,,,,lowndes county,"lowndes county,GA",05000US13185
+Mcduffie County Sheriff Department,GA,12,,13.0,1,1.0,1,10,283.0,107,161.0,15.0,,,,,,,,,,mcduffie county,"mcduffie county,GA",05000US13189
+Meriwether County Sheriff Department,GA,12,,28.0,0,1.0,0,27,356.0,119,211.0,26.0,,,,,,,,,,meriwether county,"meriwether county,GA",05000US13199
+Mitchell County Sheriff Department,GA,12,,34.0,0,2.0,2,30,204.0,63,132.0,9.0,,,,,,,,,,mitchell county,"mitchell county,GA",05000US13205
+Murray County Sheriff Department,GA,12,,84.0,1,5.0,2,76,752.0,150,560.0,42.0,,,,,,,,,,murray county,"murray county,GA",05000US13213
+Oconee County Sheriff Department,GA,12,,37.0,0,0.0,4,33,436.0,52,355.0,29.0,,,,,,,,,,oconee county,"oconee county,GA",05000US13219
+Paulding County Sheriff Department,GA,12,,188.0,1,17.0,23,147,2374.0,622,1513.0,239.0,,,,,,,,,,paulding county,"paulding county,GA",05000US13223
+Peach County Sheriff Department,GA,12,,20.0,0,0.0,2,18,276.0,83,174.0,19.0,,,,,,,,,,peach county,"peach county,GA",05000US13225
+Pickens County Sheriff Department,GA,12,,47.0,2,0.0,0,45,456.0,109,329.0,18.0,,,,,,,,,,pickens county,"pickens county,GA",05000US13227
+Rockdale County Sheriff Department,GA,12,,246.0,1,13.0,29,203,2302.0,643,1474.0,185.0,,,,,,,,,,rockdale county,"rockdale county,GA",05000US13247
+Spalding County Sheriff Department,GA,12,,146.0,1,17.0,29,99,1549.0,492,935.0,122.0,,,,,,,,,,spalding county,"spalding county,GA",05000US13255
+Stephens County Sheriff Department,GA,12,,32.0,3,3.0,3,23,413.0,122,275.0,16.0,,,,,,,,,,stephens county,"stephens county,GA",05000US13257
+Tattnall County Sheriff Department,GA,10,,9.0,0,0.0,2,7,249.0,78,145.0,26.0,,,,,,,,,,tattnall county,"tattnall county,GA",05000US13267
+Thomas County Sheriff Department,GA,12,,46.0,1,3.0,9,33,513.0,156,310.0,47.0,,,,,,,,,,thomas county,"thomas county,GA",05000US13275
+Tift County Sheriff Department,GA,12,,97.0,5,9.0,12,71,703.0,152,517.0,34.0,,,,,,,,,,tift county,"tift county,GA",05000US13277
+Toombs County Sheriff Department,GA,12,,21.0,1,5.0,1,14,178.0,71,91.0,16.0,,,,,,,,,,toombs county,"toombs county,GA",05000US13279
+Troup County Sheriff Department,GA,12,,30.0,2,4.0,4,20,712.0,172,503.0,37.0,,,,,,,,,,troup county,"troup county,GA",05000US13285
+Upson County Sheriff Department,GA,12,,20.0,0,4.0,7,9,430.0,163,250.0,17.0,,,,,,,,,,upson county,"upson county,GA",05000US13293
+Walker County Sheriff Department,GA,11,,58.0,0,4.0,6,48,934.0,268,615.0,51.0,,,,,,,,,,walker county,"walker county,GA",05000US13295
+Ware County Sheriff Department,GA,12,,85.0,1,4.0,12,68,731.0,194,499.0,38.0,,,,,,,,,,ware county,"ware county,GA",05000US13299
+Ada County Sheriff Department,ID,12,,128.0,0,17.0,6,105,1036.0,248,758.0,30.0,,,,,,,,,,ada county,"ada county,ID",05000US16001
+Bannock County Sheriff Department,ID,12,,15.0,2,2.0,0,11,85.0,27,56.0,2.0,,,,,,,,,,bannock county,"bannock county,ID",05000US16005
+Bingham County Sheriff Department,ID,12,,38.0,0,8.0,1,29,283.0,82,182.0,19.0,,,,,,,,,,bingham county,"bingham county,ID",05000US16011
+Blaine County Sheriff Department,ID,12,,8.0,0,0.0,0,8,33.0,14,14.0,5.0,,,,,,,,,,blaine county,"blaine county,ID",05000US16013
+Bonner County Sheriff Department,ID,12,,30.0,1,2.0,1,26,451.0,183,224.0,44.0,,,,,,,,,,bonner county,"bonner county,ID",05000US16017
+Bonneville County Sheriff Department,ID,12,,61.0,0,15.0,2,44,688.0,147,514.0,27.0,,,,,,,,,,bonneville county,"bonneville county,ID",05000US16019
+Canyon County Sheriff Department,ID,12,,92.0,1,14.0,5,72,583.0,247,294.0,42.0,,,,,,,,,,canyon county,"canyon county,ID",05000US16027
+Cassia County Sheriff Department,ID,12,,34.0,2,9.0,1,22,354.0,70,268.0,16.0,,,,,,,,,,cassia county,"cassia county,ID",05000US16031
+Elmore County Sheriff Department,ID,12,,10.0,0,0.0,0,10,92.0,22,66.0,4.0,,,,,,,,,,elmore county,"elmore county,ID",05000US16039
+Kootenai County Sheriff Department,ID,12,,88.0,1,18.0,3,66,1409.0,472,871.0,66.0,,,,,,,,,,kootenai county,"kootenai county,ID",05000US16055
+Latah County Sheriff Department,ID,12,,25.0,0,6.0,0,19,170.0,72,90.0,8.0,,,,,,,,,,latah county,"latah county,ID",05000US16057
+Madison County Sheriff Department,ID,12,,21.0,1,7.0,0,13,91.0,24,66.0,1.0,,,,,,,,,,madison county,"madison county,ID",05000US16065
+Minidoka County Sheriff Department,ID,12,,14.0,0,5.0,1,8,198.0,59,118.0,21.0,,,,,,,,,,minidoka county,"minidoka county,ID",05000US16067
+Nez Perce County Sheriff Department,ID,12,,7.0,0,2.0,0,5,113.0,32,77.0,4.0,,,,,,,,,,nez perce county,"nez perce county,ID",05000US16069
+Twin Falls County Sheriff Department,ID,12,,33.0,4,2.0,1,26,183.0,87,82.0,14.0,,,,,,,,,,twin falls county,"twin falls county,ID",05000US16083
+Allen County Sheriff Department,IN,12,,70.0,2,8.0,14,46,1022.0,203,760.0,59.0,,,,,,,,,,allen county,"allen county,IN",05000US18003
+Bartholomew County Sheriff Department,IN,12,,51.0,0,6.0,3,42,534.0,120,362.0,52.0,,,,,,,,,,bartholomew county,"bartholomew county,IN",05000US18005
+Boone County Sheriff Department,IN,12,,1.0,0,0.0,0,1,127.0,47,80.0,0.0,,,,,,,,,,boone county,"boone county,IN",05000US18011
+Carroll County Sheriff Department,IN,6,,3.0,0,0.0,0,3,110.0,37,62.0,11.0,,,,,,,,,,carroll county,"carroll county,IN",05000US18015
+Cass County Sheriff Department,IN,12,,7.0,0,0.0,2,5,275.0,74,197.0,4.0,,,,,,,,,,cass county,"cass county,IN",05000US18017
+Clark County Sheriff Department,IN,11,,51.0,0,5.0,5,41,519.0,229,264.0,26.0,,,,,,,,,,clark county,"clark county,IN",05000US18019
+Daviess County Sheriff Department,IN,12,,5.0,0,0.0,0,5,114.0,44,51.0,19.0,,,,,,,,,,daviess county,"daviess county,IN",05000US18027
+Dearborn County Sheriff Department,IN,11,,1.0,0,1.0,0,0,14.0,10,4.0,0.0,,,,,,,,,,dearborn county,"dearborn county,IN",05000US18029
+Decatur Police Dept,IN,12,9431.0,7.0,0,0.0,2,5,66.0,14,49.0,3.0,74.2,0.0,0.0,21.2,53.0,699.8,148.4,519.6,31.8,decatur,"decatur,IN",05000US18031
+Delaware,IN,12,,38.0,0,1.0,1,36,489.0,181,286.0,22.0,,,,,,,,,,delaware,"delaware,IN",05000US18035
+Floyd County Sheriff Department,IN,12,,5.0,0,1.0,1,3,627.0,136,450.0,41.0,,,,,,,,,,floyd county,"floyd county,IN",05000US18043
+Franklin City Police Dept,IN,12,24115.0,60.0,0,0.0,13,47,1062.0,126,920.0,16.0,248.8,0.0,0.0,53.9,194.9,4403.9,522.5,3815.1,66.3,franklin city,"franklin city,IN",16000US1825450
+Franklin County Sheriff Department,IN,12,,1.0,0,0.0,0,1,179.0,88,84.0,7.0,,,,,,,,,,franklin county,"franklin county,IN",05000US18047
+Fulton County Sheriff Department,IN,12,,12.0,0,1.0,3,8,121.0,40,68.0,13.0,,,,,,,,,,fulton county,"fulton county,IN",05000US18049
+Gibson County Sheriff Department,IN,12,,14.0,0,4.0,0,10,188.0,42,136.0,10.0,,,,,,,,,,gibson county,"gibson county,IN",05000US18051
+Grant County Sheriff Department,IN,12,,15.0,0,5.0,1,9,289.0,100,183.0,6.0,,,,,,,,,,grant county,"grant county,IN",05000US18053
+Greene County Sheriff Department,IN,12,,2.0,0,2.0,0,0,189.0,37,137.0,15.0,,,,,,,,,,greene county,"greene county,IN",05000US18055
+Greenfield City Police Dept,IN,12,20819.0,19.0,1,0.0,10,8,398.0,60,318.0,20.0,91.3,4.8,0.0,48.0,38.4,1911.7,288.2,1527.5,96.1,greenfield city,"greenfield city,IN",16000US1829520
+Hancock County Sheriff Department,IN,12,,14.0,0,5.0,2,7,273.0,113,143.0,17.0,,,,,,,,,,hancock county,"hancock county,IN",05000US18059
+Harrison County Sheriff Department,IN,12,,24.0,0,2.0,4,18,400.0,100,267.0,33.0,,,,,,,,,,harrison county,"harrison county,IN",05000US18061
+Henry County Sheriff Department,IN,12,,6.0,0,3.0,2,1,600.0,227,347.0,26.0,,,,,,,,,,henry county,"henry county,IN",05000US18065
+Howard County Sheriff Department,IN,12,,39.0,0,2.0,1,36,453.0,208,239.0,6.0,,,,,,,,,,howard county,"howard county,IN",05000US18067
+Jasper Police Dept,IN,12,15193.0,6.0,0,0.0,0,6,160.0,27,122.0,11.0,39.5,0.0,0.0,0.0,39.5,1053.1,177.7,803.0,72.4,jasper,"jasper,IN",05000US18073
+Jay County Sheriff Department,IN,12,,17.0,0,0.0,4,13,112.0,18,91.0,3.0,,,,,,,,,,jay county,"jay county,IN",05000US18075
+Jefferson County Sheriff Department,IN,12,,55.0,0,1.0,1,53,292.0,108,171.0,13.0,,,,,,,,,,jefferson county,"jefferson county,IN",05000US18077
+Jennings County Sheriff Department,IN,5,,39.0,0,1.0,0,38,184.0,105,75.0,4.0,,,,,,,,,,jennings county,"jennings county,IN",05000US18079
+La Porte County Sheriff Department,IN,7,,10.0,0,3.0,3,4,420.0,175,226.0,19.0,,,,,,,,,,la porte county,"la porte county,IN",05000US18091
+Madison County Sheriff Department,IN,12,,58.0,0,5.0,9,44,718.0,256,437.0,25.0,,,,,,,,,,madison county,"madison county,IN",05000US18095
+Miami County Sheriff Department,IN,12,,3.0,0,1.0,1,1,174.0,56,113.0,5.0,,,,,,,,,,miami county,"miami county,IN",05000US18103
+Morgan County Sheriff Department,IN,12,,18.0,0,7.0,1,10,111.0,58,52.0,1.0,,,,,,,,,,morgan county,"morgan county,IN",05000US18109
+Putnam County Sheriff Department,IN,12,,2.0,0,2.0,0,0,50.0,10,36.0,4.0,,,,,,,,,,putnam county,"putnam county,IN",05000US18133
+Randolph County Sheriff Department,IN,10,,2.0,0,2.0,0,0,29.0,12,12.0,5.0,,,,,,,,,,randolph county,"randolph county,IN",05000US18135
+Scott County Sheriff Department,IN,12,,0.0,0,0.0,0,0,34.0,9,25.0,0.0,,,,,,,,,,scott county,"scott county,IN",05000US18143
+Shelby County Sheriff Department,IN,12,,7.0,0,0.0,0,7,116.0,35,73.0,8.0,,,,,,,,,,shelby county,"shelby county,IN",05000US18145
+Virginia Police Dept,IN,12,1604.0,0.0,0,0.0,0,0,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,virginia,"virginia,IN",04000US51
+Wabash County Sheriff Department,IN,12,,2.0,0,0.0,0,2,40.0,11,27.0,2.0,,,,,,,,,,wabash county,"wabash county,IN",05000US18169
+Washington County Sheriff Department,IN,9,,32.0,0,0.0,0,32,41.0,12,29.0,0.0,,,,,,,,,,washington county,"washington county,IN",05000US18175
+Wayne County Sheriff Department,IN,12,,17.0,0,0.0,0,17,122.0,39,81.0,2.0,,,,,,,,,,wayne county,"wayne county,IN",05000US18177
+White County Sheriff Department,IN,12,,15.0,2,1.0,0,12,132.0,35,87.0,10.0,,,,,,,,,,white county,"white county,IN",05000US18181
+Arkansas Police Dept,KS,12,12464.0,70.0,0,7.0,2,61,534.0,126,385.0,23.0,561.6,0.0,56.2,16.0,489.4,4284.3,1010.9,3088.9,184.5,arkansas,"arkansas,KS",04000US05
+Barton County Sheriff Department,KS,12,,11.0,0,1.0,1,9,151.0,57,87.0,7.0,,,,,,,,,,barton county,"barton county,KS",05000US20009
+Cowley County Sheriff Department,KS,12,,37.0,0,2.0,0,35,153.0,49,93.0,11.0,,,,,,,,,,cowley county,"cowley county,KS",05000US20035
+Crawford County Sheriff Office,KS,12,,16.0,0,1.0,0,15,222.0,89,116.0,17.0,,,,,,,,,,crawford county,"crawford county,KS",05000US20037
+Douglas County Sheriff Department,KS,12,,25.0,0,2.0,2,21,172.0,64,99.0,9.0,,,,,,,,,,douglas county,"douglas county,KS",05000US20045
+Finney County Sheriff Department,KS,12,,37.0,0,8.0,3,26,200.0,57,137.0,6.0,,,,,,,,,,finney county,"finney county,KS",05000US20055
+Ford County Sheriff Department,KS,12,,25.0,0,0.0,1,24,124.0,57,62.0,5.0,,,,,,,,,,ford county,"ford county,KS",05000US20057
+Geary County Sheriff Department,KS,12,,16.0,0,1.0,0,15,40.0,9,29.0,2.0,,,,,,,,,,geary county,"geary county,KS",05000US20061
+Harvey County Sheriff Department,KS,12,,8.0,0,1.0,0,7,103.0,49,50.0,4.0,,,,,,,,,,harvey county,"harvey county,KS",05000US20079
+Labette County Sheriff Office,KS,12,,4.0,0,0.0,0,4,97.0,43,43.0,11.0,,,,,,,,,,labette county,"labette county,KS",05000US20099
+Miami County Sheriff Department,KS,12,,23.0,0,9.0,0,14,227.0,91,116.0,20.0,,,,,,,,,,miami county,"miami county,KS",05000US20121
+Montgomery County Sheriff Department,KS,12,,25.0,0,1.0,0,24,170.0,57,102.0,11.0,,,,,,,,,,montgomery county,"montgomery county,KS",05000US20125
+Pottawatomie County Sheriff Department,KS,12,,36.0,0,2.0,1,33,237.0,54,168.0,15.0,,,,,,,,,,pottawatomie county,"pottawatomie county,KS",05000US20149
+Reno County Sheriff Department,KS,12,,24.0,0,0.0,2,22,191.0,72,93.0,26.0,,,,,,,,,,reno county,"reno county,KS",05000US20155
+Riley County Police Department,KS,12,,174.0,1,27.0,22,124,1355.0,225,1090.0,40.0,,,,,,,,,,riley county,"riley county,KS",05000US20161
+Saline County Sheriff Department,KS,12,,23.0,1,2.0,3,17,141.0,47,83.0,11.0,,,,,,,,,,saline county,"saline county,KS",05000US20169
+Seward County Sheriff Department,KS,12,,9.0,0,3.0,0,6,26.0,9,14.0,3.0,,,,,,,,,,seward county,"seward county,KS",05000US20175
+Sumner County Sheriff Department,KS,12,,22.0,0,1.0,1,20,147.0,58,82.0,7.0,,,,,,,,,,sumner county,"sumner county,KS",05000US20191
+Wyandotte County Sheriff Department,KS,12,,19.0,0,0.0,2,17,43.0,2,39.0,2.0,,,,,,,,,,wyandotte county,"wyandotte county,KS",05000US20209
+Alexandria City Police Dept,LA,12,48449.0,815.0,9,14.0,142,650,3630.0,974,2472.0,184.0,1682.2,18.6,28.9,293.1,1341.6,7492.4,2010.4,5102.3,379.8,alexandria city,"alexandria city,LA",16000US2200975
+Allen Parish Sheriff Department,LA,12,,18.0,0,1.0,2,15,201.0,57,144.0,0.0,,,,,,,,,,allen parish,"allen parish,LA",05000US22003
+Ascension Parish Sheriff Department,LA,12,,63.0,0,21.0,42,0,2760.0,656,2069.0,35.0,,,,,,,,,,ascension parish,"ascension parish,LA",05000US22005
+Assumption Parish Sheriff Office,LA,12,,87.0,2,13.0,7,65,407.0,96,290.0,21.0,,,,,,,,,,assumption parish,"assumption parish,LA",05000US22007
+Avoyelles Parish Sheriff Department,LA,12,,152.0,1,28.0,4,119,531.0,176,342.0,13.0,,,,,,,,,,avoyelles parish,"avoyelles parish,LA",05000US22009
+Caddo Parish Sheriff Department,LA,12,,19.0,0,7.0,8,4,856.0,223,621.0,12.0,,,,,,,,,,caddo parish,"caddo parish,LA",05000US22017
+Calcasieu Parish Sheriff Department,LA,12,,137.0,0,56.0,31,50,3871.0,1275,2544.0,52.0,,,,,,,,,,calcasieu parish,"calcasieu parish,LA",05000US22019
+Concordia Parish Sheriff Department,LA,12,,59.0,2,2.0,2,53,236.0,62,158.0,16.0,,,,,,,,,,concordia parish,"concordia parish,LA",05000US22029
+De Soto Parish Sheriff Department,LA,12,,309.0,2,0.0,7,300,376.0,67,256.0,53.0,,,,,,,,,,de soto parish,"de soto parish,LA",05000US22031
+East Baton Rouge Parish Sheriff Dept,LA,12,,371.0,18,6.0,237,110,8193.0,1802,6225.0,166.0,,,,,,,,,,east baton rouge parish,"east baton rouge parish,LA",05000US22033
+East Feliciana Parish Sheriff Department,LA,12,,1.0,0,0.0,0,1,38.0,10,24.0,4.0,,,,,,,,,,east feliciana parish,"east feliciana parish,LA",05000US22037
+Evangeline Parish Sheriff Department,LA,12,,9.0,0,3.0,2,4,362.0,75,287.0,0.0,,,,,,,,,,evangeline parish,"evangeline parish,LA",05000US22039
+Grant Parish Sheriff Office,LA,11,,10.0,0,0.0,0,10,227.0,64,157.0,6.0,,,,,,,,,,grant parish,"grant parish,LA",05000US22043
+Iberia Parish Sheriff Department,LA,12,,83.0,0,14.0,69,0,1735.0,562,1165.0,8.0,,,,,,,,,,iberia parish,"iberia parish,LA",05000US22045
+Iberville Parish Sheriff Department,LA,12,,292.0,5,6.0,18,263,657.0,170,468.0,19.0,,,,,,,,,,iberville parish,"iberville parish,LA",05000US22047
+Iowa Police Dept,LA,12,3035.0,65.0,1,0.0,5,59,61.0,7,47.0,7.0,2141.7,32.9,0.0,164.7,1944.0,2009.9,230.6,1548.6,230.6,iowa,"iowa,LA",04000US19
+Jefferson Parish Sheriff Department,LA,12,,1651.0,33,64.0,412,1142,12479.0,2568,9128.0,783.0,,,,,,,,,,jefferson parish,"jefferson parish,LA",05000US22051
+Lafayette Police Dept,LA,12,122852.0,779.0,11,11.0,202,555,6815.0,1330,5244.0,241.0,634.1,9.0,9.0,164.4,451.8,5547.3,1082.6,4268.6,196.2,lafayette,"lafayette,LA",05000US22055
+Lafourche Parish Sheriff Department,LA,12,,112.0,3,0.0,17,92,1848.0,616,1164.0,68.0,,,,,,,,,,lafourche parish,"lafourche parish,LA",05000US22057
+Livingston Parish Sheriff Department,LA,12,,370.0,1,9.0,23,337,2324.0,729,1504.0,91.0,,,,,,,,,,livingston parish,"livingston parish,LA",05000US22063
+Morehouse Parish Sheriff Department,LA,12,,3.0,0,0.0,1,2,102.0,11,91.0,0.0,,,,,,,,,,morehouse parish,"morehouse parish,LA",05000US22067
+Mount Washington Police Dept,LA,12,9237.0,6.0,0,2.0,2,2,189.0,76,108.0,5.0,65.0,0.0,21.7,21.7,21.7,2046.1,822.8,1169.2,54.1,mount washington,"mount washington,LA",16000US5347560
+Orleans Police Dept,LA,12,5939.0,17.0,0,0.0,0,17,178.0,38,138.0,2.0,286.2,0.0,0.0,0.0,286.2,2997.1,639.8,2323.6,33.7,orleans,"orleans,LA",05000US22071
+Ouachita Parish Sheriff'S Office,LA,12,,183.0,6,8.0,28,141,2688.0,817,1784.0,87.0,,,,,,,,,,ouachita parish,"ouachita parish,LA",05000US22073
+Pointe Coupee Parish Sheriff Department,LA,12,,105.0,0,3.0,4,98,313.0,109,183.0,21.0,,,,,,,,,,pointe coupee parish,"pointe coupee parish,LA",05000US22077
+Rapides Parish Sheriff Department,LA,12,,83.0,0,23.0,14,46,1747.0,605,1095.0,47.0,,,,,,,,,,rapides parish,"rapides parish,LA",05000US22079
+Richland Parish Sheriff Department,LA,12,,10.0,0,1.0,0,9,214.0,35,169.0,10.0,,,,,,,,,,richland parish,"richland parish,LA",05000US22083
+Sabine Parish Sheriff Department,LA,9,,24.0,0,1.0,0,23,206.0,0,204.0,2.0,,,,,,,,,,sabine parish,"sabine parish,LA",05000US22085
+Slidell City Police Dept,LA,12,27581.0,106.0,2,13.0,17,74,1633.0,178,1414.0,41.0,384.3,7.3,47.1,61.6,268.3,5920.7,645.4,5126.7,148.7,slidell city,"slidell city,LA",16000US2270805
+St. Bernard Parish Sheriff Office,LA,12,,94.0,0,7.0,33,54,667.0,133,499.0,35.0,,,,,,,,,,st. bernard parish,"st. bernard parish,LA",05000US22087
+St. Charles Parish Sheriff Department,LA,12,,265.0,2,8.0,32,223,1605.0,409,1118.0,78.0,,,,,,,,,,st. charles parish,"st. charles parish,LA",05000US22089
+St. John The Baptist Parish Sheriff Office,LA,12,,61.0,8,3.0,26,24,1308.0,423,812.0,73.0,,,,,,,,,,st. john the baptist parish,"st. john the baptist parish,LA",05000US22095
+St. Landry Parish Sheriff Department,LA,12,,68.0,0,6.0,12,50,747.0,297,415.0,35.0,,,,,,,,,,st. landry parish,"st. landry parish,LA",05000US22097
+St. Martin Parish Sheriff Department,LA,12,,127.0,2,6.0,14,105,675.0,120,548.0,7.0,,,,,,,,,,st. martin parish,"st. martin parish,LA",05000US22099
+St. Mary Parish Sheriff Department,LA,12,,160.0,0,11.0,20,129,925.0,223,644.0,58.0,,,,,,,,,,st. mary parish,"st. mary parish,LA",05000US22101
+St. Tammany Parish Sheriff Department,LA,12,,261.0,7,15.0,15,224,2564.0,651,1755.0,158.0,,,,,,,,,,st. tammany parish,"st. tammany parish,LA",05000US22103
+Sulphur City Police Dept,LA,12,20671.0,159.0,0,7.0,19,133,983.0,271,693.0,19.0,769.2,0.0,33.9,91.9,643.4,4755.5,1311.0,3352.5,91.9,sulphur city,"sulphur city,LA",16000US2273640
+Tangipahoa Parish Sheriff Department,LA,12,,732.0,7,44.0,53,628,3724.0,1384,2151.0,189.0,,,,,,,,,,tangipahoa parish,"tangipahoa parish,LA",05000US22105
+Terrebonne Parish Sheriff Department,LA,12,,221.0,3,19.0,41,158,2625.0,483,1963.0,179.0,,,,,,,,,,terrebonne parish,"terrebonne parish,LA",05000US22109
+Union Parish Sheriff Office,LA,12,,35.0,0,0.0,0,35,28.0,11,17.0,0.0,,,,,,,,,,union parish,"union parish,LA",05000US22111
+Vermilion Parish Sheriff Department,LA,12,,86.0,1,12.0,7,66,772.0,248,495.0,29.0,,,,,,,,,,vermilion parish,"vermilion parish,LA",05000US22113
+Vernon Parish Sheriff Department,LA,12,,84.0,1,11.0,4,68,713.0,53,586.0,74.0,,,,,,,,,,vernon parish,"vernon parish,LA",05000US22115
+Washington Parish Sheriff Department,LA,12,,89.0,2,10.0,3,74,838.0,263,536.0,39.0,,,,,,,,,,washington parish,"washington parish,LA",05000US22117
+West Baton Rouge Parish Sheriff Department,LA,12,,75.0,3,2.0,6,64,610.0,65,512.0,33.0,,,,,,,,,,west baton rouge parish,"west baton rouge parish,LA",05000US22121
+Allegany County Sheriff Office,MD,12,,49.0,0,2.0,6,41,311.0,96,204.0,11.0,,,,,,,,,,allegany county,"allegany county,MD",05000US24001
+Anne Arundel County Police Department,MD,9,,1557.0,5,73.0,340,1139,10076.0,1750,7676.0,650.0,,,,,,,,,,anne arundel county,"anne arundel county,MD",05000US24003
+Baltimore City Police Dept,MD,12,625474.0,8789.0,218,315.0,3605,4651,29149.0,7770,17397.0,3982.0,1405.2,34.9,50.4,576.4,743.6,4660.3,1242.3,2781.4,636.6,baltimore city,"baltimore city,MD",16000US2404000
+Baltimore County Police Department,MD,12,,4145.0,24,145.0,1367,2609,23327.0,4061,17704.0,1562.0,,,,,,,,,,baltimore county,"baltimore county,MD",05000US24005
+Bel Air Police Dept,MD,12,10285.0,40.0,1,1.0,4,34,366.0,27,331.0,8.0,388.9,9.7,9.7,38.9,330.6,3558.6,262.5,3218.3,77.8,bel air,"bel air,MD",16000US2405825
+Caroline County Sheriff Department,MD,12,,25.0,1,2.0,8,14,389.0,156,218.0,15.0,,,,,,,,,,caroline county,"caroline county,MD",05000US24011
+Cecil County Sheriff Department,MD,12,,166.0,0,21.0,25,120,885.0,319,510.0,56.0,,,,,,,,,,cecil county,"cecil county,MD",05000US24015
+Charles County Sheriff Office,MD,12,,536.0,6,32.0,145,353,3062.0,581,2302.0,179.0,,,,,,,,,,charles county,"charles county,MD",05000US24017
+Dorchester County Sheriff Office,MD,12,,22.0,0,3.0,0,19,251.0,78,161.0,12.0,,,,,,,,,,dorchester county,"dorchester county,MD",05000US24019
+Garrett County Sheriff Office,MD,12,,30.0,1,0.0,2,27,321.0,74,231.0,16.0,,,,,,,,,,garrett county,"garrett county,MD",05000US24023
+Harford County Sheriff Office,MD,12,,487.0,2,43.0,100,342,2451.0,779,1542.0,130.0,,,,,,,,,,harford county,"harford county,MD",05000US24025
+Howard County Police Department,MD,12,,574.0,4,34.0,177,359,6410.0,1185,4913.0,312.0,,,,,,,,,,howard county,"howard county,MD",05000US24027
+Milford Police Dept,MD,12,15848.0,7.0,0,3.0,1,3,152.0,35,110.0,7.0,44.2,0.0,18.9,6.3,18.9,959.1,220.8,694.1,44.2,milford,"milford,MD",16000US2452562
+Montgomery County Police Department,MD,12,,1795.0,14,102.0,829,850,16695.0,2600,13083.0,1012.0,,,,,,,,,,montgomery county,"montgomery county,MD",05000US24031
+Talbot County Sheriff Department,MD,12,,13.0,0,1.0,3,9,235.0,92,139.0,4.0,,,,,,,,,,talbot county,"talbot county,MD",05000US24041
+Wicomico County Sheriff Department,MD,12,,81.0,2,4.0,18,57,794.0,254,505.0,35.0,,,,,,,,,,wicomico county,"wicomico county,MD",05000US24045
+Worcester Police Dept,MD,12,183247.0,1758.0,8,33.0,419,1298,6432.0,2040,3927.0,465.0,959.4,4.4,18.0,228.7,708.3,3510.0,1113.3,2143.0,253.8,worcester,"worcester,MD",05000US24047
+Adair County Sheriff Department,MO,12,,3.0,0,0.0,0,3,144.0,27,110.0,7.0,,,,,,,,,,adair county,"adair county,MO",05000US29001
+Audrain County Sheriff Department,MO,12,,4.0,0,0.0,0,4,125.0,43,76.0,6.0,,,,,,,,,,audrain county,"audrain county,MO",05000US29007
+Barry County Sheriff Office,MO,12,,54.0,0,5.0,1,48,488.0,186,266.0,36.0,,,,,,,,,,barry county,"barry county,MO",05000US29009
+Boone County Sheriff Department,MO,12,,114.0,0,3.0,14,97,779.0,200,530.0,49.0,,,,,,,,,,boone county,"boone county,MO",05000US29019
+Buchanan County Sheriff Office,MO,12,,20.0,0,0.0,2,18,247.0,71,163.0,13.0,,,,,,,,,,buchanan county,"buchanan county,MO",05000US29021
+Callaway County Sheriff Office,MO,12,,53.0,0,1.0,3,49,737.0,209,497.0,31.0,,,,,,,,,,callaway county,"callaway county,MO",05000US29027
+Camden County Sheriff Department,MO,12,,38.0,0,1.0,0,37,409.0,117,273.0,19.0,,,,,,,,,,camden county,"camden county,MO",05000US29029
+Christian County Sheriff Office,MO,12,,55.0,0,0.0,2,53,350.0,124,180.0,46.0,,,,,,,,,,christian county,"christian county,MO",05000US29043
+Cole County Sheriff Office,MO,12,,55.0,0,3.0,2,50,262.0,91,151.0,20.0,,,,,,,,,,cole county,"cole county,MO",05000US29051
+Crawford County Sheriff Department,MO,12,,25.0,3,4.0,0,18,270.0,116,146.0,8.0,,,,,,,,,,crawford county,"crawford county,MO",05000US29055
+Dunklin County Sheriff Department,MO,12,,33.0,0,2.0,1,30,265.0,79,166.0,20.0,,,,,,,,,,dunklin county,"dunklin county,MO",05000US29069
+Franklin County Sheriff Office,MO,12,,50.0,2,1.0,2,45,561.0,147,371.0,43.0,,,,,,,,,,franklin county,"franklin county,MO",05000US29071
+Greene County Sheriff Department,MO,12,,88.0,1,20.0,6,61,1737.0,524,1050.0,163.0,,,,,,,,,,greene county,"greene county,MO",05000US29077
+Jackson County Sheriff Office,MO,12,,,0,,1,5,85.0,11,72.0,2.0,,,,,,,,,,jackson county,"jackson county,MO",05000US29095
+Lincoln County Sheriff Department,MO,12,,,0,,0,6,20.0,4,16.0,0.0,,,,,,,,,,lincoln county,"lincoln county,MO",05000US29113
+Polk County Sheriff Office,MO,12,,,0,,1,20,222.0,69,146.0,7.0,,,,,,,,,,polk county,"polk county,MO",05000US29167
+Saline Police Dept,MO,12,8899.0,18.0,0,1.0,3,14,148.0,22,121.0,5.0,202.3,0.0,11.2,33.7,157.3,1663.1,247.2,1359.7,56.2,saline,"saline,MO",05000US29195
+Scott County Sheriff Office,MO,12,,,0,,0,5,20.0,6,13.0,1.0,,,,,,,,,,scott county,"scott county,MO",05000US29201
+St. Joseph City Police Dept,MO,2,8378.0,0.0,0,0.0,0,0,0.0,0,0.0,0.0,,,,,,,,,,st. joseph city,"st. joseph city,MO",16000US2964550
+Vernon Police Dept,MO,8,775.0,0.0,0,0.0,0,0,2.0,2,0.0,0.0,,,,,,,,,,vernon,"vernon,MO",05000US29217
+Warren Police Dept,MO,12,134340.0,715.0,0,91.0,148,476,3787.0,999,2049.0,739.0,532.2,0.0,67.7,110.2,354.3,2819.0,743.6,1525.2,550.1,warren,"warren,MO",05000US29219
+Bolivar County Sheriff Department,MS,5,,1.0,0,0.0,1,0,13.0,6,6.0,1.0,,,,,,,,,,bolivar county,"bolivar county,MS",05000US28011
+Clay County Sheriff Office,MS,9,,4.0,1,0.0,0,3,30.0,21,9.0,0.0,,,,,,,,,,clay county,"clay county,MS",05000US28025
+Desoto County Sheriff Office,MS,8,,6.0,0,2.0,1,3,292.0,124,156.0,12.0,,,,,,,,,,desoto county,"desoto county,MS",05000US28033
+Forrest County Sheriff Department,MS,7,,13.0,0,3.0,4,6,132.0,70,62.0,0.0,,,,,,,,,,forrest county,"forrest county,MS",05000US28035
+George County Sheriff Department,MS,12,,8.0,2,1.0,0,5,82.0,32,48.0,2.0,,,,,,,,,,george county,"george county,MS",05000US28039
+Harrison County Sheriff Department,MS,12,,43.0,5,5.0,11,22,1155.0,410,682.0,63.0,,,,,,,,,,harrison county,"harrison county,MS",05000US28047
+Hinds County Sheriff Department,MS,12,,34.0,3,1.0,5,25,469.0,230,183.0,56.0,,,,,,,,,,hinds county,"hinds county,MS",05000US28049
+Itawamba County Sheriff Office,MS,12,,28.0,1,2.0,0,25,226.0,69,143.0,14.0,,,,,,,,,,itawamba county,"itawamba county,MS",05000US28057
+Jones County Sheriff Office,MS,10,,80.0,1,18.0,12,49,710.0,294,416.0,0.0,,,,,,,,,,jones county,"jones county,MS",05000US28067
+Lafayette County Sheriff Department,MS,12,,12.0,1,1.0,0,10,184.0,57,111.0,16.0,,,,,,,,,,lafayette county,"lafayette county,MS",05000US28071
+Lauderdale County Sheriff Department,MS,12,,41.0,2,9.0,10,20,612.0,330,242.0,40.0,,,,,,,,,,lauderdale county,"lauderdale county,MS",05000US28075
+Lee County Sheriff Department,MS,12,,46.0,0,3.0,7,36,652.0,243,383.0,26.0,,,,,,,,,,lee county,"lee county,MS",05000US28081
+Leflore County Sheriff Department,MS,12,,89.0,0,0.0,6,83,433.0,156,252.0,25.0,,,,,,,,,,leflore county,"leflore county,MS",05000US28083
+Lowndes County Sheriff Office,MS,11,,48.0,0,3.0,3,42,466.0,242,209.0,15.0,,,,,,,,,,lowndes county,"lowndes county,MS",05000US28087
+Oktibbeha County Sheriff Office,MS,8,,26.0,3,3.0,3,17,213.0,94,110.0,9.0,,,,,,,,,,oktibbeha county,"oktibbeha county,MS",05000US28105
+Oxford City Police Dept,MS,12,19435.0,8.0,0,1.0,3,4,210.0,50,147.0,13.0,41.2,0.0,5.1,15.4,20.6,1080.5,257.3,756.4,66.9,oxford city,"oxford city,MS",16000US2854840
+Panola County Sheriff Office,MS,12,,115.0,2,1.0,4,108,739.0,398,319.0,22.0,,,,,,,,,,panola county,"panola county,MS",05000US28107
+Pontotoc County Sheriff Department,MS,1,,0.0,0,0.0,0,0,0.0,0,0.0,0.0,,,,,,,,,,pontotoc county,"pontotoc county,MS",05000US28115
+Rankin County Sheriff Department,MS,12,,38.0,3,2.0,6,27,638.0,134,456.0,48.0,,,,,,,,,,rankin county,"rankin county,MS",05000US28121
+Simpson County Sheriff Department,MS,12,,30.0,0,1.0,3,26,265.0,101,149.0,15.0,,,,,,,,,,simpson county,"simpson county,MS",05000US28127
+Tate County Sheriff Department,MS,2,,7.0,0,0.0,0,7,34.0,24,9.0,1.0,,,,,,,,,,tate county,"tate county,MS",05000US28137
+Tippah County Sheriff Department,MS,12,,9.0,0,0.0,0,9,6.0,1,5.0,0.0,,,,,,,,,,tippah county,"tippah county,MS",05000US28139
+Wayne County Sheriff Office,MS,12,,9.0,0,1.0,0,8,85.0,39,40.0,6.0,,,,,,,,,,wayne county,"wayne county,MS",05000US28153
+Alamance County Sheriff Department,NC,12,,116.0,1,7.0,8,100,1033.0,429,526.0,78.0,,,,,,,,,,alamance county,"alamance county,NC",05000US37001
+Alexander County Sheriff Department,NC,12,,36.0,1,6.0,6,23,803.0,335,425.0,43.0,,,,,,,,,,alexander county,"alexander county,NC",05000US37003
+Anson County Sheriff Department,NC,12,,50.0,0,12.0,10,28,716.0,331,367.0,18.0,,,,,,,,,,anson county,"anson county,NC",05000US37007
+Ashe County Sheriff Department,NC,12,,26.0,0,4.0,1,21,431.0,196,210.0,25.0,,,,,,,,,,ashe county,"ashe county,NC",05000US37009
+Bertie County Sheriff Department,NC,12,,22.0,0,1.0,6,15,286.0,84,192.0,10.0,,,,,,,,,,bertie county,"bertie county,NC",05000US37015
+Bladen County Sheriff Department,NC,12,,100.0,2,1.0,14,83,1102.0,362,707.0,33.0,,,,,,,,,,bladen county,"bladen county,NC",05000US37017
+Brunswick County Sheriff Department,NC,12,,108.0,1,20.0,17,70,1825.0,684,1052.0,89.0,,,,,,,,,,brunswick county,"brunswick county,NC",05000US37019
+Buncombe County Sheriff Department,NC,12,,144.0,4,18.0,34,88,1954.0,812,960.0,182.0,,,,,,,,,,buncombe county,"buncombe county,NC",05000US37021
+Cabarrus County Sheriff Office,NC,12,,39.0,3,7.0,9,20,910.0,343,536.0,31.0,,,,,,,,,,cabarrus county,"cabarrus county,NC",05000US37025
+Caldwell County Sheriff Department,NC,12,,61.0,2,7.0,10,42,1553.0,541,929.0,83.0,,,,,,,,,,caldwell county,"caldwell county,NC",05000US37027
+Carteret County Sheriff Office,NC,12,,87.0,3,20.0,6,58,774.0,246,480.0,48.0,,,,,,,,,,carteret county,"carteret county,NC",05000US37031
+Caswell County Sheriff Department,NC,12,,62.0,2,8.0,4,48,519.0,214,288.0,17.0,,,,,,,,,,caswell county,"caswell county,NC",05000US37033
+Chatham County Sheriff Department,NC,12,,68.0,1,8.0,7,52,781.0,367,383.0,31.0,,,,,,,,,,chatham county,"chatham county,NC",05000US37037
+Cherokee County Sheriff Department,NC,12,,32.0,3,3.0,1,25,599.0,246,327.0,26.0,,,,,,,,,,cherokee county,"cherokee county,NC",05000US37039
+Craven County Sheriff Department,NC,12,,116.0,0,8.0,19,89,1540.0,832,630.0,78.0,,,,,,,,,,craven county,"craven county,NC",05000US37049
+Cumberland County Sheriff Office,NC,12,,505.0,7,15.0,123,360,4197.0,1714,2283.0,200.0,,,,,,,,,,cumberland county,"cumberland county,NC",05000US37051
+Currituck County Sheriff Department,NC,12,,37.0,0,2.0,2,33,544.0,114,419.0,11.0,,,,,,,,,,currituck county,"currituck county,NC",05000US37053
+Dare County Sheriff Department,NC,12,,25.0,1,7.0,3,14,721.0,215,487.0,19.0,,,,,,,,,,dare county,"dare county,NC",05000US37055
+Davie County Sheriff Department,NC,12,,67.0,1,6.0,8,52,728.0,268,432.0,28.0,,,,,,,,,,davie county,"davie county,NC",05000US37059
+Duplin County Sheriff Office,NC,12,,150.0,7,10.0,16,117,990.0,476,468.0,46.0,,,,,,,,,,duplin county,"duplin county,NC",05000US37061
+Edgecombe County Sheriff Department,NC,12,,55.0,0,6.0,11,38,602.0,295,272.0,35.0,,,,,,,,,,edgecombe county,"edgecombe county,NC",05000US37065
+Forsyth County Sheriff Department,NC,12,,258.0,2,13.0,27,216,2334.0,679,1565.0,90.0,,,,,,,,,,forsyth county,"forsyth county,NC",05000US37067
+Gaston County Police Department,NC,12,,193.0,2,13.0,17,161,1308.0,567,615.0,126.0,,,,,,,,,,gaston county,"gaston county,NC",05000US37071
+Granville County Sheriff Department,NC,12,,77.0,0,1.0,10,66,896.0,421,436.0,39.0,,,,,,,,,,granville county,"granville county,NC",05000US37077
+Greene County Sheriff Department,NC,12,,29.0,0,9.0,3,17,403.0,202,174.0,27.0,,,,,,,,,,greene county,"greene county,NC",05000US37079
+Guilford County Sheriff Office,NC,12,,131.0,2,4.0,13,112,1580.0,608,885.0,87.0,,,,,,,,,,guilford county,"guilford county,NC",05000US37081
+Halifax County Sheriff Office,NC,12,,115.0,5,12.0,11,87,859.0,396,416.0,47.0,,,,,,,,,,halifax county,"halifax county,NC",05000US37083
+Harnett County Sheriff Office,NC,12,,259.0,3,16.0,42,198,2654.0,1099,1419.0,136.0,,,,,,,,,,harnett county,"harnett county,NC",05000US37085
+Haywood County Sheriff Department,NC,12,,89.0,1,6.0,7,75,969.0,428,490.0,51.0,,,,,,,,,,haywood county,"haywood county,NC",05000US37087
+Hoke County Sheriff Department,NC,10,,13.0,0,0.0,11,2,525.0,366,153.0,6.0,,,,,,,,,,hoke county,"hoke county,NC",05000US37093
+Iredell County Sheriff Department,NC,12,,164.0,0,8.0,14,142,1965.0,771,1083.0,111.0,,,,,,,,,,iredell county,"iredell county,NC",05000US37097
+Jackson County Sheriff Department,NC,12,,78.0,0,7.0,10,61,728.0,420,283.0,25.0,,,,,,,,,,jackson county,"jackson county,NC",05000US37099
+Johnston County Sheriff Department,NC,12,,121.0,0,21.0,11,89,2228.0,895,1238.0,95.0,,,,,,,,,,johnston county,"johnston county,NC",05000US37101
+Lee County Sheriff Office,NC,12,,23.0,1,4.0,1,17,648.0,211,383.0,54.0,,,,,,,,,,lee county,"lee county,NC",05000US37105
+Lenoir County Sheriff Department,NC,12,,103.0,0,5.0,22,76,970.0,418,523.0,29.0,,,,,,,,,,lenoir county,"lenoir county,NC",05000US37107
+Macon County Sheriff Office,NC,12,,16.0,1,2.0,1,12,398.0,146,234.0,18.0,,,,,,,,,,macon county,"macon county,NC",05000US37113
+Martin County Sheriff Office,NC,12,,32.0,1,1.0,7,23,465.0,208,230.0,27.0,,,,,,,,,,martin county,"martin county,NC",05000US37117
+Mcdowell County Sheriff Department,NC,12,,45.0,0,6.0,4,35,768.0,293,428.0,47.0,,,,,,,,,,mcdowell county,"mcdowell county,NC",05000US37111
+Montgomery County Sheriff Department,NC,12,,39.0,3,4.0,2,30,466.0,212,233.0,21.0,,,,,,,,,,montgomery county,"montgomery county,NC",05000US37123
+Moore County Sheriff Office,NC,12,,56.0,5,4.0,7,40,815.0,411,353.0,51.0,,,,,,,,,,moore county,"moore county,NC",05000US37125
+Nash County Sheriff Department,NC,12,,49.0,4,5.0,5,35,642.0,322,267.0,53.0,,,,,,,,,,nash county,"nash county,NC",05000US37127
+New Hanover County Sheriff Office,NC,12,,171.0,1,17.0,32,121,2181.0,603,1479.0,99.0,,,,,,,,,,new hanover county,"new hanover county,NC",05000US37129
+Onslow County Sheriff Department,NC,12,,219.0,2,29.0,37,151,2911.0,848,1943.0,120.0,,,,,,,,,,onslow county,"onslow county,NC",05000US37133
+Orange County Sheriff Department,NC,12,,38.0,3,3.0,11,21,586.0,341,218.0,27.0,,,,,,,,,,orange county,"orange county,NC",05000US37135
+Pasquotank County Sheriff Department,NC,12,,45.0,0,0.0,12,33,355.0,160,187.0,8.0,,,,,,,,,,pasquotank county,"pasquotank county,NC",05000US37139
+Pender County Sheriff Office,NC,12,,106.0,1,10.0,9,86,763.0,171,556.0,36.0,,,,,,,,,,pender county,"pender county,NC",05000US37141
+Person County Sheriff Department,NC,12,,50.0,0,11.0,3,36,587.0,272,291.0,24.0,,,,,,,,,,person county,"person county,NC",05000US37145
+Pitt County Sheriff Department,NC,12,,153.0,4,6.0,21,122,1238.0,461,729.0,48.0,,,,,,,,,,pitt county,"pitt county,NC",05000US37147
+Randolph County Sheriff Department,NC,12,,131.0,8,16.0,19,88,2221.0,675,1457.0,89.0,,,,,,,,,,randolph county,"randolph county,NC",05000US37151
+Richmond County Sheriff Office,NC,12,,135.0,7,16.0,21,91,1280.0,565,659.0,56.0,,,,,,,,,,richmond county,"richmond county,NC",05000US37153
+Robeson County Sheriff Department,NC,12,,530.0,5,18.0,98,409,3580.0,1786,1616.0,178.0,,,,,,,,,,robeson county,"robeson county,NC",05000US37155
+Rowan County Sheriff Office,NC,12,,140.0,2,9.0,14,115,1537.0,592,882.0,63.0,,,,,,,,,,rowan county,"rowan county,NC",05000US37159
+Rutherford County Sheriff Office,NC,12,,79.0,1,4.0,7,67,1329.0,716,531.0,82.0,,,,,,,,,,rutherford county,"rutherford county,NC",05000US37161
+Sampson County Sheriff Department,NC,12,,82.0,4,5.0,16,57,1393.0,772,544.0,77.0,,,,,,,,,,sampson county,"sampson county,NC",05000US37163
+Scotland County Sheriff Department,NC,8,,15.0,2,0.0,3,10,308.0,167,130.0,11.0,,,,,,,,,,scotland county,"scotland county,NC",05000US37165
+Stanly County Sheriff Department,NC,12,,22.0,0,3.0,3,16,522.0,224,281.0,17.0,,,,,,,,,,stanly county,"stanly county,NC",05000US37167
+Stokes County Sheriff Department,NC,12,,135.0,2,5.0,1,127,1009.0,401,554.0,54.0,,,,,,,,,,stokes county,"stokes county,NC",05000US37169
+Surry County Sheriff Office,NC,12,,143.0,6,11.0,16,110,1294.0,505,706.0,83.0,,,,,,,,,,surry county,"surry county,NC",05000US37171
+Transylvania County Sheriff Department,NC,12,,28.0,0,4.0,1,23,301.0,143,141.0,17.0,,,,,,,,,,transylvania county,"transylvania county,NC",05000US37175
+Union County Sheriff Office,NC,12,,234.0,6,14.0,32,182,2226.0,667,1456.0,103.0,,,,,,,,,,union county,"union county,NC",05000US37179
+Vance County Sheriff Department,NC,12,,53.0,3,4.0,22,24,1292.0,613,597.0,82.0,,,,,,,,,,vance county,"vance county,NC",05000US37181
+Wake County Sheriff Department,NC,12,,170.0,2,23.0,27,118,2462.0,1000,1276.0,186.0,,,,,,,,,,wake county,"wake county,NC",05000US37183
+Warren County Sheriff Department,NC,12,,47.0,2,3.0,6,36,479.0,203,232.0,44.0,,,,,,,,,,warren county,"warren county,NC",05000US37185
+Watauga County Sheriff Department,NC,12,,32.0,1,0.0,0,31,364.0,77,272.0,15.0,,,,,,,,,,watauga county,"watauga county,NC",05000US37189
+Wilkes County Sheriff Department,NC,12,,122.0,2,3.0,15,102,1360.0,565,734.0,61.0,,,,,,,,,,wilkes county,"wilkes county,NC",05000US37193
+Yadkin County Sheriff Department,NC,12,,87.0,1,5.0,3,78,732.0,300,405.0,27.0,,,,,,,,,,yadkin county,"yadkin county,NC",05000US37197
+Bayonne City Police Dept,NJ,12,64036.0,132.0,0,6.0,41,85,817.0,205,560.0,52.0,206.1,0.0,9.4,64.0,132.7,1275.8,320.1,874.5,81.2,bayonne city,"bayonne city,NJ",16000US3403580
+Camden Police Dept,NJ,12,77665.0,1993.0,67,74.0,755,1097,4007.0,1089,2214.0,704.0,2566.1,86.3,95.3,972.1,1412.5,5159.3,1402.2,2850.7,906.5,camden,"camden,NJ",05000US34007
+Englewood City Police Dept,NJ,12,27460.0,81.0,0,2.0,29,50,439.0,144,269.0,26.0,295.0,0.0,7.3,105.6,182.1,1598.7,524.4,979.6,94.7,englewood city,"englewood city,NJ",16000US3421480
+Hoboken City Police Dept,NJ,12,50794.0,150.0,0,11.0,43,96,995.0,151,743.0,101.0,295.3,0.0,21.7,84.7,189.0,1958.9,297.3,1462.8,198.8,hoboken city,"hoboken city,NJ",16000US3432250
+Mercer County Sheriff Office,NJ,12,,1.0,0,0.0,0,1,26.0,6,17.0,3.0,,,,,,,,,,mercer county,"mercer county,NJ",05000US34021
+Passaic Police Dept,NJ,12,70237.0,513.0,6,2.0,232,273,1459.0,439,863.0,157.0,730.4,8.5,2.8,330.3,388.7,2077.3,625.0,1228.7,223.5,passaic,"passaic,NJ",05000US34031
+Salem Police Dept,NJ,12,28926.0,38.0,2,6.0,12,18,902.0,88,771.0,43.0,131.4,6.9,20.7,41.5,62.2,3118.3,304.2,2665.4,148.7,salem,"salem,NJ",05000US34033
+Broome County Sheriff Department,NY,12,,72.0,1,9.0,7,55,855.0,208,626.0,21.0,,,,,,,,,,broome county,"broome county,NY",05000US36007
+Cayuga County Sheriff Department,NY,12,,26.0,1,4.0,2,19,373.0,81,286.0,6.0,,,,,,,,,,cayuga county,"cayuga county,NY",05000US36011
+Chautauqua County Sheriff Department,NY,12,,25.0,1,4.0,0,20,698.0,201,486.0,11.0,,,,,,,,,,chautauqua county,"chautauqua county,NY",05000US36013
+Chemung County Sheriff Department,NY,12,,63.0,1,1.0,2,59,546.0,87,441.0,18.0,,,,,,,,,,chemung county,"chemung county,NY",05000US36015
+Chenango County Sheriff Department,NY,12,,20.0,0,1.0,1,18,454.0,76,371.0,7.0,,,,,,,,,,chenango county,"chenango county,NY",05000US36017
+Clinton County Sheriff Department,NY,12,,2.0,0,0.0,0,2,20.0,3,17.0,0.0,,,,,,,,,,clinton county,"clinton county,NY",05000US36019
+Columbia County Sheriff Department,NY,12,,21.0,0,0.0,3,18,429.0,92,333.0,4.0,,,,,,,,,,columbia county,"columbia county,NY",05000US36021
+Cortland County Sheriff Office,NY,12,,20.0,0,1.0,6,13,464.0,93,367.0,4.0,,,,,,,,,,cortland county,"cortland county,NY",05000US36023
+Delaware County Sheriff Department,NY,12,,11.0,1,4.0,1,5,106.0,35,66.0,5.0,,,,,,,,,,delaware county,"delaware county,NY",05000US36025
+Dutchess County Sheriff Office,NY,12,,53.0,0,3.0,9,41,764.0,182,558.0,24.0,,,,,,,,,,dutchess county,"dutchess county,NY",05000US36027
+Elmira City Police Dept,NY,12,29362.0,104.0,2,1.0,40,61,1192.0,250,923.0,19.0,354.2,6.8,3.4,136.2,207.8,4059.7,851.4,3143.5,64.7,elmira city,"elmira city,NY",16000US3624229
+Erie County Sheriff Office,NY,12,,119.0,1,3.0,9,106,1233.0,284,906.0,43.0,,,,,,,,,,erie county,"erie county,NY",05000US36029
+Essex County Sheriff Department,NY,12,,3.0,0,0.0,0,3,6.0,3,3.0,0.0,,,,,,,,,,essex county,"essex county,NY",05000US36031
+Franklin County Sheriff Department,NY,12,,0.0,0,0.0,0,0,0.0,0,0.0,0.0,,,,,,,,,,franklin county,"franklin county,NY",05000US36033
+Genesee County Sheriff Department,NY,12,,26.0,0,5.0,3,18,624.0,130,472.0,22.0,,,,,,,,,,genesee county,"genesee county,NY",05000US36037
+Hempstead Village Police Dept,NY,12,54380.0,464.0,9,9.0,207,239,992.0,217,636.0,139.0,853.3,16.6,16.6,380.7,439.5,1824.2,399.0,1169.5,255.6,hempstead village,"hempstead village,NY",16000US3633139
+Jefferson County Sheriff Department,NY,12,,26.0,0,1.0,1,24,287.0,11,274.0,2.0,,,,,,,,,,jefferson county,"jefferson county,NY",05000US36045
+Lewis County Sheriff Department,NY,12,,11.0,0,0.0,2,9,198.0,73,119.0,6.0,,,,,,,,,,lewis county,"lewis county,NY",05000US36049
+Livingston County Sheriff Office,NY,12,,24.0,0,6.0,0,18,508.0,100,402.0,6.0,,,,,,,,,,livingston county,"livingston county,NY",05000US36051
+Madison County Sheriff Office,NY,12,,14.0,0,2.0,1,11,257.0,85,165.0,7.0,,,,,,,,,,madison county,"madison county,NY",05000US36053
+Montgomery County Sheriff Department,NY,12,,19.0,0,4.0,3,12,402.0,46,351.0,5.0,,,,,,,,,,montgomery county,"montgomery county,NY",05000US36057
+New York City Police Dept,NY,12,8289415.0,52993.0,419,1162.0,20201,31211,142760.0,18635,115935.0,8190.0,639.3,5.1,14.0,243.7,376.5,1722.2,224.8,1398.6,98.8,new york city,"new york city,NY",16000US3651000
+Niagara County Sheriff Department,NY,12,,52.0,0,10.0,5,37,1056.0,306,711.0,39.0,,,,,,,,,,niagara county,"niagara county,NY",05000US36063
+Oneida County Sheriff Department,NY,12,,34.0,0,3.0,7,24,484.0,141,334.0,9.0,,,,,,,,,,oneida county,"oneida county,NY",05000US36065
+Onondaga County Sheriff Department,NY,12,,194.0,1,16.0,39,138,2481.0,550,1836.0,95.0,,,,,,,,,,onondaga county,"onondaga county,NY",05000US36067
+Ontario County Sheriff Office,NY,12,,68.0,1,15.0,10,42,1148.0,264,869.0,15.0,,,,,,,,,,ontario county,"ontario county,NY",05000US36069
+Orange County Sheriff Office,NY,11,,6.0,0,0.0,0,6,17.0,2,12.0,3.0,,,,,,,,,,orange county,"orange county,NY",05000US36071
+Orleans County Sheriff Department,NY,12,,23.0,0,1.0,3,19,285.0,76,200.0,9.0,,,,,,,,,,orleans county,"orleans county,NY",05000US36073
+Ossining Village Police Dept,NY,12,25366.0,41.0,0,0.0,18,23,314.0,74,227.0,13.0,161.6,0.0,0.0,71.0,90.7,1237.9,291.7,894.9,51.2,ossining village,"ossining village,NY",16000US3655530
+Otsego County Sheriff Department,NY,12,,27.0,0,1.0,0,26,116.0,41,67.0,8.0,,,,,,,,,,otsego county,"otsego county,NY",05000US36077
+Poughkeepsie City Police Dept,NY,12,32967.0,342.0,3,12.0,87,240,986.0,247,690.0,49.0,1037.4,9.1,36.4,263.9,728.0,2990.9,749.2,2093.0,148.6,poughkeepsie city,"poughkeepsie city,NY",16000US3659641
+Putnam County Sheriff Office,NY,12,,20.0,0,5.0,4,11,321.0,74,238.0,9.0,,,,,,,,,,putnam county,"putnam county,NY",05000US36079
+Rensselaer County Sheriff Department,NY,12,,37.0,0,3.0,2,32,200.0,70,126.0,4.0,,,,,,,,,,rensselaer county,"rensselaer county,NY",05000US36083
+Rockland County Sheriff Office,NY,12,,10.0,0,0.0,0,10,39.0,0,38.0,1.0,,,,,,,,,,rockland county,"rockland county,NY",05000US36087
+Rome City Police Dept,NY,12,33842.0,46.0,0,8.0,21,17,468.0,133,310.0,25.0,135.9,0.0,23.6,62.1,50.2,1382.9,393.0,916.0,73.9,rome city,"rome city,NY",16000US3663418
+Adams County Sheriff Office,OH,12,,13.0,0,2.0,1,10,414.0,195,208.0,11.0,,,,,,,,,,adams county,"adams county,OH",05000US39001
+Akron City Police Dept,OH,12,198390.0,1759.0,24,167.0,577,991,10034.0,3429,5884.0,721.0,886.6,12.1,84.2,290.8,499.5,5057.7,1728.4,2965.9,363.4,akron city,"akron city,OH",16000US3901000
+Allen County Sheriff Office,OH,12,,69.0,2,18.0,12,37,1160.0,310,816.0,34.0,,,,,,,,,,allen county,"allen county,OH",05000US39003
+Ashtabula County Sheriff Office,OH,12,,65.0,2,10.0,10,43,1346.0,369,921.0,56.0,,,,,,,,,,ashtabula county,"ashtabula county,OH",05000US39007
+Athens City Police Dept,OH,12,23834.0,15.0,0,1.0,8,6,454.0,89,359.0,6.0,62.9,0.0,4.2,33.6,25.2,1904.8,373.4,1506.3,25.2,athens city,"athens city,OH",16000US3902736
+Athens County Sheriff Office,OH,12,,19.0,0,5.0,6,8,641.0,206,419.0,16.0,,,,,,,,,,athens county,"athens county,OH",05000US39009
+Auglaize County Sheriff Department,OH,12,,4.0,0,1.0,0,3,149.0,53,90.0,6.0,,,,,,,,,,auglaize county,"auglaize county,OH",05000US39011
+Belmont County Sheriff Office,OH,12,,21.0,0,4.0,3,14,642.0,188,418.0,36.0,,,,,,,,,,belmont county,"belmont county,OH",05000US39013
+Brown County Sheriff Office,OH,12,,2.0,0,0.0,1,1,198.0,72,122.0,4.0,,,,,,,,,,brown county,"brown county,OH",05000US39015
+Butler County Sheriff Office,OH,12,,314.0,1,6.0,11,296,990.0,308,679.0,3.0,,,,,,,,,,butler county,"butler county,OH",05000US39017
+Carroll County Sheriff Department,OH,12,,45.0,0,1.0,0,44,225.0,71,141.0,13.0,,,,,,,,,,carroll county,"carroll county,OH",05000US39019
+Champaign County Sheriff Office,OH,12,,14.0,0,0.0,1,13,396.0,139,243.0,14.0,,,,,,,,,,champaign county,"champaign county,OH",05000US39021
+Clark County Sheriff Department,OH,12,,28.0,0,7.0,2,19,1118.0,280,803.0,35.0,,,,,,,,,,clark county,"clark county,OH",05000US39023
+Clermont County Sheriff Office,OH,12,,64.0,0,11.0,3,50,1773.0,686,1041.0,46.0,,,,,,,,,,clermont county,"clermont county,OH",05000US39025
+Cleveland,OH,12,393781.0,5449.0,84,363.0,3252,1750,24309.0,9740,10808.0,3761.0,1383.8,21.3,92.2,825.8,444.4,6173.2,2473.5,2744.7,955.1,cleveland,"cleveland,OH",16000US3916014
+Clinton County Sheriff Office,OH,12,,9.0,0,3.0,0,6,75.0,24,46.0,5.0,,,,,,,,,,clinton county,"clinton county,OH",05000US39027
+Columbiana County Sheriff Office,OH,12,,14.0,1,1.0,1,11,79.0,61,15.0,3.0,,,,,,,,,,columbiana county,"columbiana county,OH",05000US39029
+Coshocton County Sheriff Department,OH,12,,19.0,0,0.0,5,14,895.0,294,590.0,11.0,,,,,,,,,,coshocton county,"coshocton county,OH",05000US39031
+Crawford County Sheriff Department,OH,12,,8.0,0,1.0,0,7,351.0,172,168.0,11.0,,,,,,,,,,crawford county,"crawford county,OH",05000US39033
+Cuyahoga Falls City Police Dept,OH,12,49470.0,65.0,0,17.0,13,35,1274.0,230,984.0,60.0,131.4,0.0,34.4,26.3,70.7,2575.3,464.9,1989.1,121.3,cuyahoga falls city,"cuyahoga falls city,OH",16000US3919778
+Darke County Sheriff Department,OH,12,,13.0,0,2.0,3,8,461.0,151,293.0,17.0,,,,,,,,,,darke county,"darke county,OH",05000US39037
+Defiance County Sheriff Office,OH,12,,6.0,0,5.0,0,1,173.0,40,130.0,3.0,,,,,,,,,,defiance county,"defiance county,OH",05000US39039
+Delaware City Police Dept,OH,12,35539.0,53.0,0,17.0,23,13,1062.0,189,834.0,39.0,149.1,0.0,47.8,64.7,36.6,2988.3,531.8,2346.7,109.7,delaware city,"delaware city,OH",16000US3921434
+Delaware County Sheriff Office,OH,12,,25.0,1,8.0,3,13,1184.0,375,796.0,13.0,,,,,,,,,,delaware county,"delaware county,OH",05000US39041
+Erie County Sheriff Department,OH,8,,28.0,0,0.0,0,28,317.0,77,235.0,5.0,,,,,,,,,,erie county,"erie county,OH",05000US39043
+Fairfield City Police Dept,OH,12,42727.0,146.0,4,7.0,28,107,1338.0,194,1102.0,42.0,341.7,9.4,16.4,65.5,250.4,3131.5,454.0,2579.2,98.3,fairfield city,"fairfield city,OH",16000US3925970
+Fairfield County Sheriff Office,OH,12,,26.0,0,9.0,10,7,928.0,222,684.0,22.0,,,,,,,,,,fairfield county,"fairfield county,OH",05000US39045
+Franklin County Sheriff Department,OH,12,,120.0,2,6.0,61,51,1419.0,410,925.0,84.0,,,,,,,,,,franklin county,"franklin county,OH",05000US39049
+Fulton County Sheriff Department,OH,12,,24.0,1,3.0,0,20,376.0,113,249.0,14.0,,,,,,,,,,fulton county,"fulton county,OH",05000US39051
+Gallia County Sheriff Office,OH,12,,17.0,2,3.0,7,5,610.0,248,345.0,17.0,,,,,,,,,,gallia county,"gallia county,OH",05000US39053
+Geauga County Sheriff Department,OH,12,,18.0,0,5.0,4,9,325.0,105,209.0,11.0,,,,,,,,,,geauga county,"geauga county,OH",05000US39055
+Greene County Sheriff Department,OH,12,,25.0,1,12.0,4,8,477.0,181,267.0,29.0,,,,,,,,,,greene county,"greene county,OH",05000US39057
+Guernsey County Sheriff Department,OH,12,,6.0,2,1.0,3,0,189.0,73,107.0,9.0,,,,,,,,,,guernsey county,"guernsey county,OH",05000US39059
+Hamilton City Police Dept,OH,12,62791.0,372.0,3,89.0,157,123,4713.0,1289,3218.0,206.0,592.4,4.8,141.7,250.0,195.9,7505.9,2052.8,5124.9,328.1,hamilton city,"hamilton city,OH",16000US3933012
+Hamilton County Sheriff Department,OH,12,,275.0,4,54.0,136,81,5771.0,1168,4342.0,261.0,,,,,,,,,,hamilton county,"hamilton county,OH",05000US39061
+Hancock County Sheriff Office,OH,12,,4.0,0,1.0,0,3,248.0,90,151.0,7.0,,,,,,,,,,hancock county,"hancock county,OH",05000US39063
+Hardin County Sheriff Department,OH,12,,4.0,0,0.0,0,4,281.0,132,145.0,4.0,,,,,,,,,,hardin county,"hardin county,OH",05000US39065
+Henry County Sheriff Office,OH,11,,11.0,1,5.0,0,5,282.0,93,178.0,11.0,,,,,,,,,,henry county,"henry county,OH",05000US39069
+Highland County Sheriff Department,OH,12,,44.0,0,3.0,0,41,614.0,227,354.0,33.0,,,,,,,,,,highland county,"highland county,OH",05000US39071
+Hocking County Sheriff Department,OH,12,,9.0,3,2.0,0,4,378.0,142,230.0,6.0,,,,,,,,,,hocking county,"hocking county,OH",05000US39073
+Holmes County Sheriff Department,OH,12,,4.0,0,2.0,2,0,230.0,61,156.0,13.0,,,,,,,,,,holmes county,"holmes county,OH",05000US39075
+Hudson City Police Dept,OH,12,22181.0,2.0,0,0.0,2,0,142.0,23,119.0,0.0,9.0,0.0,0.0,9.0,0.0,640.2,103.7,536.5,0.0,hudson city,"hudson city,OH",16000US3936651
+Jefferson County Sheriff Department,OH,12,,9.0,0,1.0,4,4,92.0,25,64.0,3.0,,,,,,,,,,jefferson county,"jefferson county,OH",05000US39081
+Knox County Sheriff Department,OH,10,,12.0,1,2.0,2,7,229.0,74,155.0,0.0,,,,,,,,,,knox county,"knox county,OH",05000US39083
+Lake County Sheriff Office,OH,12,,208.0,0,21.0,5,182,350.0,111,228.0,11.0,,,,,,,,,,lake county,"lake county,OH",05000US39085
+Lawrence County Sheriff Department,OH,12,,86.0,1,8.0,11,66,1080.0,309,708.0,63.0,,,,,,,,,,lawrence county,"lawrence county,OH",05000US39087
+Licking County Sheriff Office,OH,12,,407.0,0,51.0,13,343,1242.0,389,817.0,36.0,,,,,,,,,,licking county,"licking county,OH",05000US39089
+Logan County Sheriff Office,OH,12,,10.0,0,4.0,0,6,555.0,238,301.0,16.0,,,,,,,,,,logan county,"logan county,OH",05000US39091
+Lucas County Sheriff Department,OH,12,,82.0,0,4.0,22,56,1331.0,394,855.0,82.0,,,,,,,,,,lucas county,"lucas county,OH",05000US39095
+Madison County Sheriff Office,OH,12,,13.0,0,3.0,2,8,472.0,180,271.0,21.0,,,,,,,,,,madison county,"madison county,OH",05000US39097
+Mahoning County Sheriff Office,OH,12,,7.0,0,2.0,2,3,165.0,72,90.0,3.0,,,,,,,,,,mahoning county,"mahoning county,OH",05000US39099
+Marion City Police Dept,OH,12,36687.0,97.0,2,14.0,48,33,1893.0,851,997.0,45.0,264.4,5.5,38.2,130.8,90.0,5159.9,2319.6,2717.6,122.7,marion city,"marion city,OH",16000US3947754
+Marion County Sheriff Office,OH,12,,34.0,0,6.0,20,8,1427.0,409,1009.0,9.0,,,,,,,,,,marion county,"marion county,OH",05000US39101
+Meigs County Sheriff Department,OH,12,,16.0,1,5.0,5,5,331.0,156,159.0,16.0,,,,,,,,,,meigs county,"meigs county,OH",05000US39105
+Mercer County Sheriff Department,OH,12,,10.0,1,3.0,1,5,213.0,55,154.0,4.0,,,,,,,,,,mercer county,"mercer county,OH",05000US39107
+Miami County Sheriff Department,OH,12,,16.0,0,5.0,5,6,542.0,156,357.0,29.0,,,,,,,,,,miami county,"miami county,OH",05000US39109
+Morrow County Sheriff Department,OH,12,,16.0,0,3.0,3,10,481.0,231,237.0,13.0,,,,,,,,,,morrow county,"morrow county,OH",05000US39117
+Muskingum County Sheriff Office,OH,12,,53.0,1,22.0,12,18,1304.0,350,887.0,67.0,,,,,,,,,,muskingum county,"muskingum county,OH",05000US39119
+Newark City Police Dept,OH,12,47787.0,69.0,0,20.0,32,17,2292.0,501,1705.0,86.0,144.4,0.0,41.9,67.0,35.6,4796.3,1048.4,3567.9,180.0,newark city,"newark city,OH",16000US3954040
+Oregon City Police Dept,OH,12,20205.0,34.0,1,1.0,11,21,959.0,173,759.0,27.0,168.3,4.9,4.9,54.4,103.9,4746.3,856.2,3756.5,133.6,oregon city,"oregon city,OH",16000US3958730
+Ottawa County Sheriff Department,OH,12,,3.0,0,1.0,2,0,327.0,66,252.0,9.0,,,,,,,,,,ottawa county,"ottawa county,OH",05000US39123
+Parma City Police Dept,OH,12,80963.0,56.0,0,4.0,14,38,451.0,47,398.0,6.0,69.2,0.0,4.9,17.3,46.9,557.0,58.1,491.6,7.4,parma city,"parma city,OH",16000US3961000
+Perrysburg City Police Dept,OH,12,20771.0,16.0,0,3.0,2,11,419.0,53,349.0,17.0,77.0,0.0,14.4,9.6,53.0,2017.2,255.2,1680.2,81.8,perrysburg city,"perrysburg city,OH",16000US3962148
+Pickaway County Sheriff Office,OH,12,,27.0,0,4.0,5,18,1094.0,493,580.0,21.0,,,,,,,,,,pickaway county,"pickaway county,OH",05000US39129
+Pike County Sheriff Department,OH,12,,15.0,3,3.0,3,6,312.0,78,216.0,18.0,,,,,,,,,,pike county,"pike county,OH",05000US39131
+Seneca County Sheriff Department,OH,12,,12.0,0,0.0,0,12,116.0,32,82.0,2.0,,,,,,,,,,seneca county,"seneca county,OH",05000US39147
+Warren County Sheriff Department,OH,12,,66.0,0,8.0,7,51,730.0,102,616.0,12.0,,,,,,,,,,warren county,"warren county,OH",05000US39165
+Washington County Sheriff Department,OH,12,,26.0,0,6.0,2,18,388.0,101,275.0,12.0,,,,,,,,,,washington county,"washington county,OH",05000US39167
+Wayne County Sheriff Department,OH,12,,42.0,1,5.0,8,28,452.0,132,310.0,10.0,,,,,,,,,,wayne county,"wayne county,OH",05000US39169
+Adair County Sheriff Department,OK,12,,54.0,1,5.0,0,48,211.0,103,96.0,12.0,,,,,,,,,,adair county,"adair county,OK",05000US40001
+Beckham County Sheriff Office,OK,12,,4.0,0,0.0,0,4,73.0,27,45.0,1.0,,,,,,,,,,beckham county,"beckham county,OK",05000US40009
+Bryan County Sheriff Department,OK,12,,64.0,1,5.0,0,58,367.0,147,184.0,36.0,,,,,,,,,,bryan county,"bryan county,OK",05000US40013
+Canadian County Sheriff Department,OK,12,,16.0,0,1.0,1,14,175.0,54,95.0,26.0,,,,,,,,,,canadian county,"canadian county,OK",05000US40017
+Carter County Sheriff Department,OK,12,,67.0,2,8.0,2,55,268.0,95,141.0,32.0,,,,,,,,,,carter county,"carter county,OK",05000US40019
+Comanche County Sheriff Office,OK,12,,38.0,0,4.0,1,33,410.0,139,242.0,29.0,,,,,,,,,,comanche county,"comanche county,OK",05000US40031
+Creek County Sheriff Department,OK,12,,56.0,3,5.0,5,43,375.0,133,203.0,39.0,,,,,,,,,,creek county,"creek county,OK",05000US40037
+Custer County Sheriff Office,OK,12,,5.0,0,1.0,0,4,52.0,18,29.0,5.0,,,,,,,,,,custer county,"custer county,OK",05000US40039
+Delaware County Sheriff Office,OK,12,,52.0,1,5.0,0,46,380.0,137,197.0,46.0,,,,,,,,,,delaware county,"delaware county,OK",05000US40041
+Garfield County Sheriff Department,OK,12,,4.0,0,2.0,0,2,76.0,23,44.0,9.0,,,,,,,,,,garfield county,"garfield county,OK",05000US40047
+Garvin County Sheriff Department,OK,12,,23.0,0,3.0,5,15,255.0,97,142.0,16.0,,,,,,,,,,garvin county,"garvin county,OK",05000US40049
+Grady County Sheriff Department,OK,12,,53.0,1,4.0,1,47,239.0,108,118.0,13.0,,,,,,,,,,grady county,"grady county,OK",05000US40051
+Kay County Sheriff Department,OK,12,,22.0,0,0.0,7,15,78.0,40,37.0,1.0,,,,,,,,,,kay county,"kay county,OK",05000US40071
+Le Flore County Sheriff Department,OK,12,,49.0,1,1.0,0,47,367.0,163,179.0,25.0,,,,,,,,,,le flore county,"le flore county,OK",05000US40079
+Logan County Sheriff Department,OK,12,,23.0,0,1.0,1,21,403.0,157,218.0,28.0,,,,,,,,,,logan county,"logan county,OK",05000US40083
+Mayes County Sheriff Office,OK,10,,20.0,2,0.0,1,17,199.0,70,112.0,17.0,,,,,,,,,,mayes county,"mayes county,OK",05000US40097
+Mcclain County Sheriff Department,OK,12,,21.0,0,2.0,6,13,349.0,126,195.0,28.0,,,,,,,,,,mcclain county,"mcclain county,OK",05000US40087
+Mcintosh County Sheriff Office,OK,12,,20.0,0,4.0,0,16,225.0,65,139.0,21.0,,,,,,,,,,mcintosh county,"mcintosh county,OK",05000US40091
+Oklahoma County Sheriff Office,OK,12,,32.0,0,1.0,1,30,318.0,68,215.0,35.0,,,,,,,,,,oklahoma county,"oklahoma county,OK",05000US40109
+Osage County Sheriff Office,OK,12,,31.0,0,5.0,3,23,400.0,141,221.0,38.0,,,,,,,,,,osage county,"osage county,OK",05000US40113
+Ottawa County Sheriff Department,OK,12,,14.0,0,2.0,1,11,126.0,49,60.0,17.0,,,,,,,,,,ottawa county,"ottawa county,OK",05000US40115
+Payne County Sheriff Office,OK,12,,15.0,0,2.0,2,11,253.0,88,147.0,18.0,,,,,,,,,,payne county,"payne county,OK",05000US40119
+Pittsburg County Sheriff Department,OK,12,,31.0,0,13.0,2,16,349.0,121,211.0,17.0,,,,,,,,,,pittsburg county,"pittsburg county,OK",05000US40121
+Pontotoc County Sheriff Office,OK,12,,27.0,1,6.0,2,18,196.0,80,92.0,24.0,,,,,,,,,,pontotoc county,"pontotoc county,OK",05000US40123
+Pottawatomie County Sheriff Department,OK,12,,30.0,2,2.0,0,26,619.0,233,307.0,79.0,,,,,,,,,,pottawatomie county,"pottawatomie county,OK",05000US40125
+Rogers County Sheriff Office,OK,12,,60.0,0,18.0,1,41,401.0,134,211.0,56.0,,,,,,,,,,rogers county,"rogers county,OK",05000US40131
+Sequoyah County Sheriff Department,OK,12,,42.0,0,4.0,0,38,335.0,128,192.0,15.0,,,,,,,,,,sequoyah county,"sequoyah county,OK",05000US40135
+Stephens County Sheriff Office,OK,12,,14.0,1,4.0,2,7,229.0,82,132.0,15.0,,,,,,,,,,stephens county,"stephens county,OK",05000US40137
+Texas County Sheriff Department,OK,12,,5.0,0,2.0,0,3,37.0,6,29.0,2.0,,,,,,,,,,texas county,"texas county,OK",05000US40139
+Allentown City Police Dept,PA,12,119334.0,653.0,15,54.0,374,210,4603.0,1248,2987.0,368.0,547.2,12.6,45.3,313.4,176.0,3857.2,1045.8,2503.1,308.4,allentown city,"allentown city,PA",16000US4202000
+Altoona City Police Dept,PA,12,46404.0,163.0,2,31.0,32,98,903.0,226,641.0,36.0,351.3,4.3,66.8,69.0,211.2,1946.0,487.0,1381.3,77.6,altoona city,"altoona city,PA",16000US4202184
+Chester City Police Dept,PA,12,34239.0,720.0,22,17.0,217,464,1203.0,465,636.0,102.0,2102.9,64.3,49.7,633.8,1355.2,3513.5,1358.1,1857.5,297.9,chester city,"chester city,PA",16000US4213208
+Erie Police Dept,PA,12,101972.0,458.0,8,64.0,172,214,3510.0,1095,2311.0,104.0,449.1,7.8,62.8,168.7,209.9,3442.1,1073.8,2266.3,102.0,erie,"erie,PA",05000US42049
+Harrisburg City Police Dept,PA,12,49753.0,727.0,11,56.0,388,272,2426.0,613,1655.0,158.0,1461.2,22.1,112.6,779.9,546.7,4876.1,1232.1,3326.4,317.6,harrisburg city,"harrisburg city,PA",16000US4232800
+Hazleton City Police Dept,PA,12,25358.0,114.0,3,19.0,46,46,600.0,210,344.0,46.0,449.6,11.8,74.9,181.4,181.4,2366.1,828.1,1356.6,181.4,hazleton city,"hazleton city,PA",16000US4233408
+Johnstown City Police Dept,PA,12,22360.0,131.0,1,6.0,31,93,822.0,285,499.0,38.0,585.9,4.5,26.8,138.6,415.9,3676.2,1274.6,2231.7,169.9,johnstown city,"johnstown city,PA",16000US4238288
+Lebanon City Police Dept,PA,12,25662.0,99.0,2,6.0,48,43,696.0,123,544.0,29.0,385.8,7.8,23.4,187.0,167.6,2712.2,479.3,2119.9,113.0,lebanon city,"lebanon city,PA",16000US4242168
+Mckeesport City Police Dept,PA,12,21603.0,410.0,10,13.0,69,318,721.0,279,409.0,33.0,1897.9,46.3,60.2,319.4,1472.0,3337.5,1291.5,1893.3,152.8,mckeesport city,"mckeesport city,PA",16000US4246256
+Mifflin,PA,11,636.0,0.0,0,0.0,0,0,1.0,1,0.0,0.0,,,,,,,,,,mifflin,"mifflin,PA",05000US42087
+Monroeville Municipality Police Dept,PA,12,28491.0,70.0,0,0.0,11,59,420.0,98,298.0,24.0,245.7,0.0,0.0,38.6,207.1,1474.1,344.0,1045.9,84.2,monroeville municipality,"monroeville municipality,PA",16000US4250528
+Union County Sheriff Office,PA,12,,17.0,0,8.0,0,9,234.0,65,151.0,18.0,,,,,,,,,,union county,"union county,PA",05000US42119
+Washington County Sheriff Office,PA,12,,317.0,6,75.0,63,173,2669.0,556,1946.0,167.0,,,,,,,,,,washington county,"washington county,PA",05000US42125
+Berkeley County Sheriff Office,SC,12,,487.0,10,37.0,82,358,3558.0,1010,2173.0,375.0,,,,,,,,,,berkeley county,"berkeley county,SC",05000US45015
+Charleston City Police Dept,SC,12,123856.0,296.0,12,19.0,104,161,3373.0,374,2764.0,235.0,239.0,9.7,15.3,84.0,130.0,2723.3,302.0,2231.6,189.7,charleston city,"charleston city,SC",16000US4513330
+Charleston County Sheriff Department,SC,12,,441.0,4,19.0,66,352,1803.0,546,1100.0,157.0,,,,,,,,,,charleston county,"charleston county,SC",05000US45019
+Cherokee County Sheriff Department,SC,12,,79.0,1,0.0,12,66,440.0,190,187.0,63.0,,,,,,,,,,cherokee county,"cherokee county,SC",05000US45021
+Clarendon County Sheriff Department,SC,12,,113.0,1,6.0,15,91,896.0,284,551.0,61.0,,,,,,,,,,clarendon county,"clarendon county,SC",05000US45027
+Colleton County Sheriff Department,SC,12,,204.0,2,11.0,8,183,1180.0,326,699.0,155.0,,,,,,,,,,colleton county,"colleton county,SC",05000US45029
+Dillon County Sheriff Office,SC,12,,192.0,4,13.0,20,155,1054.0,370,608.0,76.0,,,,,,,,,,dillon county,"dillon county,SC",05000US45033
+Dorchester County Sheriff Department,SC,12,,345.0,3,25.0,53,264,2074.0,582,1292.0,200.0,,,,,,,,,,dorchester county,"dorchester county,SC",05000US45035
+Fairfield County Sheriff Department,SC,12,,125.0,3,5.0,9,108,665.0,177,422.0,66.0,,,,,,,,,,fairfield county,"fairfield county,SC",05000US45039
+Horry County Police Department,SC,10,,757.0,7,95.0,103,552,4730.0,1273,3076.0,381.0,,,,,,,,,,horry county,"horry county,SC",05000US45051
+Jasper County Sheriff Department,SC,12,,34.0,5,10.0,13,6,461.0,135,290.0,36.0,,,,,,,,,,jasper county,"jasper county,SC",05000US45053
+Kershaw County Sheriff Department,SC,12,,256.0,2,27.0,14,213,1557.0,485,962.0,110.0,,,,,,,,,,kershaw county,"kershaw county,SC",05000US45055
+Marlboro County Sheriff Office,SC,12,,172.0,2,14.0,11,145,863.0,269,551.0,43.0,,,,,,,,,,marlboro county,"marlboro county,SC",05000US45069
+Aberdeen City Police Dept,SD,12,26593.0,69.0,0,23.0,1,45,507.0,88,392.0,27.0,259.5,0.0,86.5,3.8,169.2,1906.5,330.9,1474.1,101.5,aberdeen city,"aberdeen city,SD",16000US4600100
+Codington County Sheriff Office,SD,12,,7.0,0,1.0,0,6,65.0,20,40.0,5.0,,,,,,,,,,codington county,"codington county,SD",05000US46029
+Meade County Sheriff Department,SD,12,,9.0,0,1.0,0,8,21.0,8,12.0,1.0,,,,,,,,,,meade county,"meade county,SD",05000US46093
+Minnehaha County Sheriff Department,SD,12,,41.0,0,14.0,0,27,317.0,82,224.0,11.0,,,,,,,,,,minnehaha county,"minnehaha county,SD",05000US46099
+Pennington County Sheriff Office,SD,12,,63.0,0,20.0,0,43,408.0,116,271.0,21.0,,,,,,,,,,pennington county,"pennington county,SD",05000US46103
+Box Elder County Sheriff Office,UT,12,,7.0,0,1.0,0,6,192.0,37,146.0,9.0,,,,,,,,,,box elder county,"box elder county,UT",05000US49003
+Cache County Sheriff Office,UT,12,,13.0,0,9.0,0,4,409.0,74,316.0,19.0,,,,,,,,,,cache county,"cache county,UT",05000US49005
+Carbon County Sheriff Office,UT,12,,7.0,0,2.0,0,5,181.0,43,129.0,9.0,,,,,,,,,,carbon county,"carbon county,UT",05000US49007
+Davis County Sheriff Office,UT,12,,16.0,0,5.0,0,11,208.0,48,154.0,6.0,,,,,,,,,,davis county,"davis county,UT",05000US49011
+Washington County Sheriff Office,UT,12,,27.0,0,1.0,2,24,197.0,78,107.0,12.0,,,,,,,,,,washington county,"washington county,UT",05000US49053
+Asotin County Sheriff Office,WA,12,,27.0,0,4.0,1,22,208.0,52,141.0,15.0,,,,,,,,,,asotin county,"asotin county,WA",05000US53003
+Benton County Sheriff Office,WA,12,,67.0,0,8.0,5,54,527.0,159,332.0,36.0,,,,,,,,,,benton county,"benton county,WA",05000US53005
+Chelan County Sheriff Office,WA,12,,37.0,1,6.0,6,24,620.0,194,397.0,29.0,,,,,,,,,,chelan county,"chelan county,WA",05000US53007
+Clallam County Sheriff Office,WA,12,,72.0,4,9.0,11,48,880.0,302,543.0,35.0,,,,,,,,,,clallam county,"clallam county,WA",05000US53009
+Clark County Sheriff Department,WA,12,,283.0,2,46.0,51,184,3987.0,1155,2297.0,535.0,,,,,,,,,,clark county,"clark county,WA",05000US53011
+Cowlitz County Sheriff Office,WA,12,,84.0,3,35.0,1,45,537.0,186,309.0,42.0,,,,,,,,,,cowlitz county,"cowlitz county,WA",05000US53015
+Douglas County Sheriff Department,WA,12,,20.0,0,4.0,3,13,464.0,184,257.0,23.0,,,,,,,,,,douglas county,"douglas county,WA",05000US53017
+Grant County Sheriff Office,WA,12,,109.0,3,19.0,13,74,1266.0,357,787.0,122.0,,,,,,,,,,grant county,"grant county,WA",05000US53025
+Grays Harbor County Sheriff Department,WA,11,,33.0,1,2.0,5,25,289.0,124,148.0,17.0,,,,,,,,,,grays harbor county,"grays harbor county,WA",05000US53027
+Island County Sheriff Office,WA,12,,72.0,1,15.0,2,54,778.0,326,421.0,31.0,,,,,,,,,,island county,"island county,WA",05000US53029
+Jefferson County Sheriff Office,WA,12,,43.0,0,8.0,1,34,429.0,143,257.0,29.0,,,,,,,,,,jefferson county,"jefferson county,WA",05000US53031
+King County Sheriff Office,WA,12,,405.0,7,64.0,127,207,5555.0,2436,2525.0,594.0,,,,,,,,,,king county,"king county,WA",05000US53033
+Kitsap County Sheriff Office,WA,12,,338.0,2,54.0,47,235,4317.0,1287,2711.0,319.0,,,,,,,,,,kitsap county,"kitsap county,WA",05000US53035
+Klickitat County Sheriff Office,WA,11,,7.0,0,0.0,0,7,64.0,39,20.0,5.0,,,,,,,,,,klickitat county,"klickitat county,WA",05000US53039
+Lewis County Sheriff Office,WA,12,,47.0,1,5.0,1,40,696.0,296,354.0,46.0,,,,,,,,,,lewis county,"lewis county,WA",05000US53041
+Mason County Sheriff Department,WA,12,,102.0,4,10.0,11,77,1687.0,718,782.0,187.0,,,,,,,,,,mason county,"mason county,WA",05000US53045
+Mountlake Terrace City Police Dept,WA,12,20363.0,43.0,0,8.0,11,24,558.0,136,371.0,51.0,211.2,0.0,39.3,54.0,117.9,2740.3,667.9,1821.9,250.5,mountlake terrace city,"mountlake terrace city,WA",16000US5347490
+Okanogan County Sheriff Office,WA,12,,43.0,0,6.0,3,34,418.0,173,207.0,38.0,,,,,,,,,,okanogan county,"okanogan county,WA",05000US53047
+Pacific County Sheriff Department,WA,11,,13.0,0,2.0,1,10,277.0,125,143.0,9.0,,,,,,,,,,pacific county,"pacific county,WA",05000US53049
+Pierce County Sheriff Department,WA,12,,1000.0,17,102.0,198,683,9990.0,3663,5233.0,1094.0,,,,,,,,,,pierce county,"pierce county,WA",05000US53053
+Pullman City Police Dept,WA,12,30206.0,29.0,0,5.0,3,21,230.0,60,166.0,4.0,96.0,0.0,16.6,9.9,69.5,761.4,198.6,549.6,13.2,pullman city,"pullman city,WA",16000US5356625
+Skagit County Sheriff Department,WA,12,,95.0,1,12.0,8,74,1382.0,538,774.0,70.0,,,,,,,,,,skagit county,"skagit county,WA",05000US53057
+Spokane County Sheriff Department,WA,12,,147.0,4,19.0,36,88,3985.0,1248,2407.0,330.0,,,,,,,,,,spokane county,"spokane county,WA",05000US53063
+Spokane Police Dept,WA,12,212163.0,1369.0,13,81.0,537,738,18522.0,3827,12600.0,2095.0,645.3,6.1,38.2,253.1,347.8,8730.1,1803.8,5938.8,987.4,spokane,"spokane,WA",16000US5367167
+Stevens County Sheriff Department,WA,12,,26.0,0,4.0,0,22,610.0,268,292.0,50.0,,,,,,,,,,stevens county,"stevens county,WA",05000US53065
+Thurston County Sheriff Department,WA,12,,258.0,1,30.0,24,203,2832.0,1174,1457.0,201.0,,,,,,,,,,thurston county,"thurston county,WA",05000US53067
+Walla Walla County Sheriff Office,WA,12,,17.0,0,1.0,3,13,443.0,144,281.0,18.0,,,,,,,,,,walla walla county,"walla walla county,WA",05000US53071
+Whatcom County Sheriff Department,WA,12,,158.0,1,35.0,7,115,1130.0,412,648.0,70.0,,,,,,,,,,whatcom county,"whatcom county,WA",05000US53073
+Whitman County Sheriff Department,WA,12,,6.0,1,2.0,0,3,102.0,30,64.0,8.0,,,,,,,,,,whitman county,"whitman county,WA",05000US53075
+Albany County Sheriff Office,WY,12,,9.0,0,1.0,0,8,53.0,11,37.0,5.0,,,,,,,,,,albany county,"albany county,WY",05000US56001
+Campbell County Sheriff Office,WY,12,,24.0,0,1.0,3,20,229.0,64,153.0,12.0,,,,,,,,,,campbell county,"campbell county,WY",05000US56005
+Fremont County Sheriff Office,WY,12,,16.0,0,3.0,0,13,210.0,67,134.0,9.0,,,,,,,,,,fremont county,"fremont county,WY",05000US56013
+Laramie City Police Dept,WY,12,31767.0,34.0,1,14.0,2,17,710.0,102,585.0,23.0,107.0,3.1,44.1,6.3,53.5,2235.0,321.1,1841.5,72.4,laramie city,"laramie city,WY",16000US5645050
+Laramie County Sheriff Department,WY,12,,77.0,2,11.0,6,58,615.0,164,404.0,47.0,,,,,,,,,,laramie county,"laramie county,WY",05000US56021
+Natrona County Sheriff Office,WY,12,,39.0,0,5.0,0,34,246.0,78,145.0,23.0,,,,,,,,,,natrona county,"natrona county,WY",05000US56025
+Park County Sheriff Department,WY,12,,31.0,0,2.0,0,29,84.0,27,51.0,6.0,,,,,,,,,,park county,"park county,WY",05000US56029
+Rock Springs City Police Dept,WY,12,23566.0,89.0,2,15.0,1,71,623.0,61,546.0,16.0,377.7,8.5,63.7,4.2,301.3,2643.6,258.8,2316.9,67.9,rock springs city,"rock springs city,WY",16000US5667235
