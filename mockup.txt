@@ -1,0 +1,28 @@
+town, robbery, crime, population
+bokeh, 100, 200, 3000
+japan, 30, 40, 1000
+
+
+crime			
+	|
+	| *
+	|	*
+	|   *
+	|
+	|		*
+	----------------------
+	        robbery
+
+
+crime		
+	|
+	|	*
+	|		*
+	|   *
+	|
+	| *
+	----------------------
+	        population
+
+Iterating through all the possible Y values
+
