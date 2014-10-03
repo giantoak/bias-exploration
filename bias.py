@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.DEBUG)
 import pandas as pd
 from bokeh import widgets as bkw
 from bokeh.plotting import scatter
-from bokeh.properties import Instance
+from bokeh.properties import Instance, Dict, String
 from bokeh.server.app import bokeh_app
 from bokeh.server.utils.plugins import object_page
 from bokeh.objects import Plot, ColumnDataSource
@@ -23,7 +23,7 @@ class ScatterBias(bkw.HBox):
     
     inputs = Instance(bkw.VBoxForm)
     outputs = Instance(bkw.VBoxForm)
-    plot = Instance(Plot)
+    plots = Dict(String, Instance(Plot))
     source = Instance(ColumnDataSource)
     
 
@@ -125,8 +125,10 @@ class ScatterBias(bkw.HBox):
             return
 
         for w in self.widgets.itervalues():
+            logging.debug(' setting up callback for %s', w)
             w.on_change('value', self, 'input_change')
         logging.debug(' setup_events, success')
+        import pdb; pdb.set_trace()
 
     def update_data(self):
         """Update y by the amount designated by each slider"""
@@ -138,7 +140,8 @@ class ScatterBias(bkw.HBox):
                 for varname, widget in self.widgets.iteritems()
                 }
 
-
+        ## TODO: Pandas indexing is slow. Make this faster by iterating through
+        # df0 down below, and pass in the row as variable
         def debias(ix):
             """ recalculates debiased y for given weights from initial data"""    
             y = self.df0.ix[ix, c['y']]
@@ -161,7 +164,7 @@ class ScatterBias(bkw.HBox):
         )
         self.update_data()
 
-@bokeh_app.route('/bokeh/sliders/')
+@bokeh_app.route('/bokeh/bias/')
 @object_page('Bias Correction')
 def make_object():
     app = ScatterBias.create()
