@@ -1,172 +1,148 @@
-"""
-This app gives users visual control over bias in data, by hand-tuning 
-lurking coefficients.
-
-It was made by Sam Zhang, Jeff Borowitz, and Jake Shapiro for Giant Oak 
-as part of the Darpa Memex project.
-"""
 from __future__ import print_function
-import logging
-logging.basicConfig(level=logging.DEBUG)
+
+import time
+
+import numpy as np
+
+import bokeh.plotting as bk
+
+from bokeh.browserlib import view
+from bokeh.document import Document
+from bokeh.glyphs import Line
+from bokeh.objects import (
+    Plot, DataRange1d, LinearAxis,
+    ColumnDataSource, Glyph, PanTool, WheelZoomTool
+)
+from bokeh.session import Session
+
+from bokeh import widgets as bkw
 
 import pandas as pd
-from bokeh import widgets as bkw
-from bokeh.plotting import scatter
-from bokeh.properties import Instance, Dict, String
-from bokeh.server.app import bokeh_app
-from bokeh.server.utils.plugins import object_page
-from bokeh.objects import Plot, ColumnDataSource
+import time
+from pprint import pprint
 
-class ScatterBias(bkw.HBox):
-    extra_generated_classes = [['ScatterBias', 'ScatterBias', 'HBox']]
-    maxval = 100.0
-    
-    inputs = Instance(bkw.VBoxForm)
-    outputs = Instance(bkw.VBoxForm)
-    plots = Dict(String, Instance(Plot))
-    source = Instance(ColumnDataSource)
-    
+class ScatterBias(object):
+    maxval = 1000.0
+    own_update = False
 
-    cols = Dict(String, String)
-    widgets = Dict(String, Instance(bkw.Slider))
-    # unmodified source
-    df0 = Instance(ColumnDataSource)
+    def __init__(self):
+        ##############################
+        ## load Bokeh page
+        ##############################
 
-    @classmethod
-    def create(cls):
-        obj = cls()
+        bk.output_server('bias_scatter_demo')
+        self.document = Document()
+        self.session = Session()
+        self.session.use_doc('bias_scatter_demo')
+        self.session.load_document(self.document)
 
         ##############################
         ## load DataFrame
         ##############################
         df = pd.read_csv('data/crime2013_tagged_clean.csv', index_col='full_name')
-        obj.cols = {'x': 'Robbery', 
+        self.cols = {'x': 'Robbery', 
                 'y': 'Violent crime total',
                 'pop': 'Population'
                 }
-        
-        cols = obj.cols
 
-        # only keep interested values
+        cols = self.cols
+
         df2= df.ix[:, cols.values()]
-
-        # drop empty rows
         df2.dropna(axis=0, inplace=True)
 
-        df0 = df2.copy()
-        df0.reset_index(inplace=True)
-        # keep copy of original data
-        obj.source = ColumnDataSource(df2)
-        obj.df0 = ColumnDataSource(df0)
+        self.df0 = df2.copy()
+
+        source = ColumnDataSource(df2)
 
         ##############################
         ## draw scatterplot
         ##############################
 
-        obj.plots = {
-                'robbery': scatter(x=cols['x'],
-                    y=cols['y'], 
-                    source=obj.source,
-                    x_axis_label=cols['x'],
-                    y_axis_label=cols['y'],
-                    title='%s by %s, Adjusted by by %s'%(cols['y'], 
-                        cols['x'], cols['pop'])),
-                'pop': scatter(x=cols['pop'], 
-                    y=cols['y'], 
-                    source=obj.source,
-                    x_axis_label=cols['pop'],
-                    y_axis_label=cols['y'],
-                    title='%s by %s, Adjusted by by %s'%(cols['y'], 
-                        cols['pop'], cols['pop'])),
-            }
+        bk.figure(x_axis_label=cols['x'],
+                y_axis_label=cols['y'],
+                title='Bias Adjusted %s by %s'%(cols['y'], cols['pop']))
+        sc = bk.scatter(x=cols['x'], y=cols['y'], source=source)
+
+        ##############################
+        ## get renderer data source
+        ##############################
+
+        renderer = [r for r in bk.curplot().renderers if isinstance(r, Glyph)][0]
+        self.ds = renderer.data_source
+
+        ##############################
+        ## initiate textbox + slider
+        ##############################
+        self.widgets = []
+        default_val = 0
+
+        text = bkw.TextInput(
+                value=str(default_val), 
+                title='Population Beta:')
+        text.on_change('value', self.on_text_change)
         
-        obj.update_data()
-        ##############################
-        ## draw inputs
-        ##############################
-        # bokeh.plotting.scatter 
-        ## TODO: refactor so that any number of control variables are created
-        # automatically. This involves subsuming c['pop'] into c['ctrls'], which
-        # would be a dictionary mapping column names to their widget titles 
-        pop_slider = obj.make_widget(bkw.Slider, dict(
-                start=-obj.maxval, 
-                end=obj.maxval, 
-                value=0, 
+        slider = bkw.Slider(
+                start=-self.maxval, 
+                end=self.maxval, 
+                value=default_val, 
                 step=1, 
-                title='Population'), 
-            cols['pop'])
+                title='Population Beta')
+        slider.on_change('value', self.on_slider_change)
+
+        self.widgets.append(text)
+        self.widgets.append(slider)
 
         ##############################
-        ## make layout
+        ## setup layout
         ##############################
-        obj.inputs = bkw.VBoxForm(
-                children=[pop_slider]
-                )
-        
-        obj.outputs = bkw.VBoxForm(
-                children=[obj.plots['robbery']]
-            )
+        inputs = bkw.HBox(children=[text, slider])
+        layout = bkw.VBox(children=[sc, inputs])
+        self.document.add(layout)
 
-        obj.children.append(obj.inputs)
-        obj.children.append(obj.outputs)
+        ##############################
+        ## link plot with session with document
+        ##############################
+        self.session.store_document(self.document)
+        link = self.session.object_link(self.document.context)
+        view(link)
+        self.session.poll_document(self.document, interval=.5)
+
+    def update_data(self, val):
+        amt = val/self.maxval
+        import time
+        #TODO: change this from random.random
+        c = self.cols
+        t0 = time.time()
+
+        #old_ys = self.ds.data[c['y']][:]
+        self.ds.data[c['y']] = [ 
+                row[c['y']]/
+                (1 + row[c['x']] + amt*row[c['pop']])
+            for i, row in self.df0.iterrows()]
         
-        return obj
+
+        self.session.store_objects(self.ds)
+        self.session.store_document(self.document)
+        t1 = time.time()
+        print(t1-t0)
+        
+        # for seeing how much changed:
+        #for i in range(len(old_ys)):
+        #    print(i, self.ds.data[c['pop']][i], self.ds.data[c['y']][i] - 
+        #           old_ys[i])
+
+    def on_slider_change(self, obj, attr, old, new):
+        self.update_data(new)
     
-    def make_widget(self, constructor, args, associated_variable):
-        """Makes a Widget that gets linked to associated_variable"""
-        w = constructor(**args)
-        self.widgets.update({associated_variable: w})
-        return w
+    def on_text_change(self, obj, attr, old, new):
+        try:
+            n = int(new)
+            n = max(n, -self.maxval)
+            n = min(n, self.maxval)
 
-    def setup_events(self):
-        super(ScatterBias, self).setup_events()
-        logging.debug('setup_events')
-        if len(self.widgets) == 0:
-            logging.debug(' setup_events, returned')
+            self.update_data(n)
+        except ValueError:
             return
 
-        for w in self.widgets.itervalues():
-            logging.debug(' setting up callback for %s', w)
-            w.on_change('value', self, 'input_change')
-        logging.debug(' setup_events, success')
-
-    def update_data(self):
-        """Update y by the amount designated by each slider"""
-        logging.debug('update_data')
-        c = self.cols
-        ## TODO:: make this check for bad input; especially with text boxes
-        betas = { 
-                varname: getattr(widget, 'value')/self.maxval 
-                for varname, widget in self.widgets.iteritems()
-                }
-
-        def debias(row):
-            """ recalculates debiased y for given weights from initial data"""    
-            y = row[c['y']]
-            denom = 1.0 + sum([
-                beta * row[varname]
-                for varname, beta in betas.iteritems()
-                            ])
-
-            return y / denom
-        
-        df0 = pd.DataFrame(self.df0.data)
-        adj_y = []
-        for ix, row in df0.iterrows():
-            adj_y.append(debias(row))
-
-        self.source.data[c['y']] = adj_y
-        assert len(adj_y) == len(self.source.data[c['x']])
-        logging.debug('self.source["y"] now contains debiased data')
-
-    def input_change(self, obj, attr, old, new):
-        logging.debug(
-            'Input changed: %s: %d, %d', attr, old, new
-        )
-        self.update_data()
-
-@bokeh_app.route('/bokeh/bias/')
-@object_page('Bias Correction')
-def make_object():
-    app = ScatterBias.create()
-    return app
+if __name__ == '__main__':
+    sb = ScatterBias()
