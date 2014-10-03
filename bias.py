@@ -27,10 +27,10 @@ class ScatterBias(bkw.HBox):
     source = Instance(ColumnDataSource)
     
 
-    cols = list()
-    widgets = dict()
+    cols = Dict(String, String)
+    widgets = Dict(String, Instance(bkw.Slider))
     # unmodified source
-    df0 = None
+    df0 = Instance(ColumnDataSource)
 
     @classmethod
     def create(cls):
@@ -53,17 +53,18 @@ class ScatterBias(bkw.HBox):
         # drop empty rows
         df2.dropna(axis=0, inplace=True)
 
-        obj.df0 = df2.copy()
-        obj.df0.reset_index(inplace=True)
+        df0 = df2.copy()
+        df0.reset_index(inplace=True)
         # keep copy of original data
         obj.source = ColumnDataSource(df2)
+        obj.df0 = ColumnDataSource(df0)
 
         ##############################
         ## draw scatterplot
         ##############################
 
         obj.plots = {
-                'robbery': scatter(x=cols['x'], 
+                'robbery': scatter(x=cols['x'],
                     y=cols['y'], 
                     source=obj.source,
                     x_axis_label=cols['x'],
@@ -128,7 +129,6 @@ class ScatterBias(bkw.HBox):
             logging.debug(' setting up callback for %s', w)
             w.on_change('value', self, 'input_change')
         logging.debug(' setup_events, success')
-        import pdb; pdb.set_trace()
 
     def update_data(self):
         """Update y by the amount designated by each slider"""
@@ -140,23 +140,24 @@ class ScatterBias(bkw.HBox):
                 for varname, widget in self.widgets.iteritems()
                 }
 
-        ## TODO: Pandas indexing is slow. Make this faster by iterating through
-        # df0 down below, and pass in the row as variable
-        def debias(ix):
+        def debias(row):
             """ recalculates debiased y for given weights from initial data"""    
-            y = self.df0.ix[ix, c['y']]
+            y = row[c['y']]
             denom = 1.0 + sum([
-                beta * self.df0.ix[ix, varname] 
+                beta * row[varname]
                 for varname, beta in betas.iteritems()
                             ])
 
             return y / denom
-
-        #old_ys = self.ds.data[c['y']][:]
-
-        for ix in xrange(len(self.source.data[c['y']])):
-            self.source.data[c['y']][ix] = debias(ix)
         
+        df0 = pd.DataFrame(self.df0.data)
+        adj_y = []
+        for ix, row in df0.iterrows():
+            adj_y.append(debias(row))
+
+        self.source.data[c['y']] = adj_y
+        assert len(adj_y) == len(self.source.data[c['x']])
+        logging.debug('self.source["y"] now contains debiased data')
 
     def input_change(self, obj, attr, old, new):
         logging.debug(
