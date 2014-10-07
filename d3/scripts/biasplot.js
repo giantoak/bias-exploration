@@ -1,9 +1,32 @@
 //TODO: make this into a closure
 function genScatterBias(data){
     "use strict";
+
+    // Load input sliders
+    var input_text = d3.select('#inputs')
+        .append('div')
+        .attr('class', 'input-text')
+        .text(0);
+
+    var input = d3.select('#inputs')
+        .append('div')
+        .append('input')
+        .attr('class', 'input-ctrl')
+        .attr({'type': 'range',
+                'min': -1,
+                'max': 1,
+                'step': 0.05,
+                'value': 0
+                });
+
+    // TODO: have this display all possible inputs
     
-    var w=500, h=500, r=3, alpha=.5;
-    var pad = {left: 20, right: 20, top: 20, bottom: 20};
+    //TODO: wrap input into div with text box?
+    input.on('input', update_plot);
+
+    
+    var w=600, h=600, r=3, alpha=.5;
+    var pad = {left: 50, right: 50, top: 50, bottom: 50};
 
     var columns = Object.keys(data[0]);
 
@@ -48,8 +71,41 @@ function genScatterBias(data){
         .attr('height', h)
         .attr('fill-opacity', alpha);
     
+    svg.append("g")
+        .attr("class", "y axis");
+
+    svg.append("g")
+        .attr("class", "x axis");
+
     // TODO: draw axes
+    var xAxis = d3.svg.axis()
+        .scale(sx)
+        .orient('bottom'),
+        yAxis = d3.svg.axis()
+        .scale(sy)
+        .orient('left');
     
+    svg.select('.x.axis')
+        .attr('transform', 'translate(0, ' + (h - 2*pad.bottom) + ')')
+        .call(xAxis);
+    
+    svg.select('.y.axis')
+        .attr('transform', 'translate(' + (2*pad.left) + ',0)')
+        .call(yAxis);
+
+
+    // y-axis label. (0, h/2), rotated
+    svg.append('text')
+        .attr('x', pad.left)
+        .attr('y', pad.top)
+        .text(c.y);
+    
+    // x-axis label. (w/2, h)
+    svg.append('text')
+        .attr('x', w/2-pad.right)
+        .attr('y', h-pad.bottom)
+        .text(c.x);
+
     var circles = svg.selectAll('circle')
         .data(data)
         .enter()
@@ -57,28 +113,6 @@ function genScatterBias(data){
             .attr('cx', function(d) { return sx(d[c.x]); })
             .attr('cy', function(d) { return rebias(d, 0); })
             .attr('r', r);
-
-    // TODO: add text label above slider
-    // TODO: have this display all possible inputs
-    // set up input slider
-    var input_text = d3.select('#inputs')
-        .append('div')
-        .attr('class', 'input-text')
-        .text(0);
-
-    var input = d3.select('#inputs')
-        .append('div')
-        .append('input')
-        .attr('class', 'input-ctrl')
-        .attr({'type': 'range',
-                'min': -1,
-                'max': 1,
-                'step': 0.05,
-                'value': 0
-                });
-    
-    //TODO: wrap input into div with text box?
-    input.on('input', update_plot);
 
     
     function rebias(row, beta) {
@@ -90,13 +124,16 @@ function genScatterBias(data){
         var adj_y = y / denom;
         return sy(adj_y);
     }
+
     function update_plot() {
         // this is where the plot gets reweighted based off slider value
         
         var slider_val = parseFloat(this.value);
         input_text.text(slider_val);
         
-        circles.attr('cy', function (d) {
+        circles.transition()
+            .duration(100)
+            .attr('cy', function (d) {
                 var adj_y = rebias(d, slider_val);
                 return adj_y;
             });
