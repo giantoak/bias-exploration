@@ -20,21 +20,27 @@ function genScatterBias(data){
                    check_nan(d[c.y]) || 
                    check_nan(d[c.ctrl])));
         
+        
         return filtered;
     });
 
     var xextent  = d3.extent(data, function(d) { return parseFloat(d[c.x]); });
-    var yextent = d3.extent(data, function(d) { return parseFloat(d[c.y]); });
-    // no scaling yet:
+    var yextent = d3.extent(data, function(d) { 
+        return parseFloat(d[c.y])/(1 + parseFloat(d[c.x]));
+    });
+    var cextent = d3.extent(data, function(d) { return parseFloat(d[c.extent]); });
     
     var xmin = xextent[0],
         xmax = xextent[1],
         ymin = yextent[0],
-        ymax = yextent[1];
+        ymax = yextent[1],
+        cmin = cextent[0],
+        cmax = cextent[1];
     
     console.log(xmin, xmax, ymin, ymax);
     var sx = d3.scale.linear().domain([xmin, xmax]).range([pad.left*2, w-pad.right*2]);
     var sy = d3.scale.linear().domain([ymin, ymax]).range([h-pad.bottom*2, pad.top*2]);
+    var sc = d3.scale.linear().domain([ymin, ymax]).range([h-pad.bottom*2, pad.top*2]);
 
     // draw d3
     var svg = d3.select('#outputs').append('svg:svg')
@@ -42,29 +48,28 @@ function genScatterBias(data){
         .attr('height', h)
         .attr('fill-opacity', alpha);
     
-    // optionally draw outline of scatterplot. omitted here
+    // TODO: draw axes
+    
     var circles = svg.selectAll('circle')
         .data(data)
         .enter()
             .append('svg:circle')
             .attr('cx', function(d) { return sx(d[c.x]); })
-            .attr('cy', function(d) { return sy(d[c.y]); })
+            .attr('cy', function(d) { return rebias(d, 0); })
             .attr('r', r);
-    // Let's draw a scatterplot between two points:
-    // x = unemployment, y = completeness
-    console.log(circles);
-    function draw(betas) {
-        /* betas is an object mapping each column name with their associated
-        coefficients.*/
-
-
-    }
 
     // TODO: add text label above slider
     // TODO: have this display all possible inputs
     // set up input slider
+    var input_text = d3.select('#inputs')
+        .append('div')
+        .attr('class', 'input-text')
+        .text(0);
+
     var input = d3.select('#inputs')
+        .append('div')
         .append('input')
+        .attr('class', 'input-ctrl')
         .attr({'type': 'range',
                 'min': -1,
                 'max': 1,
@@ -75,10 +80,26 @@ function genScatterBias(data){
     //TODO: wrap input into div with text box?
     input.on('input', update_plot);
 
+    
+    function rebias(row, beta) {
+        var x = parseFloat(row[c.x]),
+            y = parseFloat(row[c.y]),
+            ctrl = parseFloat(row[c.ctrl]);
 
+        var denom = 1 + x + beta*ctrl;
+        var adj_y = y / denom;
+        return sy(adj_y);
+    }
     function update_plot() {
         // this is where the plot gets reweighted based off slider value
-        console.log(this.value);
+        
+        var slider_val = parseFloat(this.value);
+        input_text.text(slider_val);
+        
+        circles.attr('cy', function (d) {
+                var adj_y = rebias(d, slider_val);
+                return adj_y;
+            });
     }
 
 }

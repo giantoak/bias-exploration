@@ -3,9 +3,22 @@
 <head>
 <script type="text/javascript" src="scripts/d3-3.4.11.min.js"></script>
 <style>
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+    margin-left: 30%;
+    width: 500px;
+}
+
 .subcontainer {
     display: inline-block;
     width: 500px;
+}
+
+#intro {
+    margin-bottom: 50px;
 }
 
 #outputs {
@@ -14,28 +27,40 @@
 }
 
 #inputs {
-    height: 300px;
+    height: 200px;
     border-style: dotted;
     margin-right: 50px;
-    vertical-align: 400px;
+    vertical-align: 100px;
 }
 
+.input-text {
+    margin: 50px;
+    text-align: center;
+}
+
+.input-ctrl {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+}
 
 </style>
-
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 
 
 <body>
-
-<h3 class='title'>Easy de-biaser</h3>
-
+<div id ='content'>
+<h3 class='title'>Sliding adjustment of biased data</h3>
+<div id ='intro'>
+    We designed this tool to give analysts a sense for the hidden variables that mediate relationships between variables in a dataset. 
+</div>
 <div id='container'>
     <div class='subcontainer' id='inputs'></div>
     <div class='subcontainer' id='outputs'></div>
 </div>
-
+</div>
 <script src='scripts/biasplot.js'></script>
 </body>
 </html>
