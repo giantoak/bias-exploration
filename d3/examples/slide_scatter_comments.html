@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="scripts/d3-3.4.11.min.js"></script>
+<title>Scatterplot with slider</title>
+</head>
+<body>
+
+<h3 style="font-family:sans-serif">Scatterplot with slider</h3>
+
+<div id="button"><button>Randomize</button></div>
+
+<div style="font-size:14px;font-family:sans-serif">Size of points:
+    <input style="position:relative;top:4px;" type="range" min="1" max="50" value="5"></div>
+
+
+<div id="chart" style="position:relative;top:10px;"></div>
+
+<script type="text/javascript">
+(function(){
+  "use strict";
+  ///////////////////////
+  // set basic parameters
+  ///////////////////////
+
+  // width of scatterplot; if we want more than one plot,
+  // we'll need an array instead
+  var w=500, h=300;
+
+  // left and right padding of scatterplot from div borders
+  var xPad = 3, yPad = 3;
+
+  // multiplicative pad. not sure why this is split from above
+  var padMult=2;
+
+  // radius of scatterplot circles
+  var radius=5;
+
+  // used to given more distance between text labels and circles
+  var radPad=2;
+  
+
+  // dataset is a 1d array of 2d elements. in a more complicated
+  // case, a javascript list of objects (dictionary) would be more 
+  // desirable
+  // 
+  // for example, dataset = 
+  //	[
+  //	{ 'crime': 100, 'robbery': 50, 'name': 'Tacoma, WA'},
+  //	{...}, 
+  //	...]
+  //
+
+  ///////////////////////
+  // initialize data
+  ///////////////////////
+
+  var dataset = [];
+
+  // minimum value is padMult*xpad,
+  // maximum value is w-padMult*xPad
+  for(var i=0; i<10; i++) {
+    dataset[i] = [Math.random()*(w-2*padMult*xPad)+padMult*xPad,
+                  Math.random()*(h-2*padMult*yPad)+padMult*yPad];
+  }
+  
+  ///////////////////////
+  // create elements
+  ///////////////////////
+  
+  var svg = d3.select("#chart").append("svg:svg")
+                      .attr("width", w)
+                      .attr("height", h);
+
+  // this is the outline of the scatterplot
+  svg.append("svg:rect")
+     //its top left corner is (xPad, yPad)
+     .attr("x", xPad).attr("y",yPad)
+     // these dimensions measure from the edges of the padding
+     // so it preserves a distance of (xPad, yPad) from the
+     // far corner
+     .attr("width", w-xPad*2).attr("height",h-yPad*2)
+     .attr("fill", "rgb(230,230,230)").attr("stroke", "black");
+
+  // in d3, it is possible to selectAll on elements that don't exist yet
+  // then, once data is entered into it, the elements are created with 'append'
+  var circles = svg.selectAll("circle")
+     .data(dataset)
+     .enter()
+        // this is effectively a loop over the data, making circles
+         .append("svg:circle")
+        // these circles have coordinates with the padding and scaling already
+         // baked in from their creation. with bespoke data, we'll have to
+         // rescale to fit the inner rectangle of the plot
+         .attr("cx", function(d) { return d[0]; })
+         .attr("cy", function(d) { return d[1]; })
+         .attr("r", radius)
+         .attr("fill", "steelblue")
+         .on("mouseover", function(){
+            d3.select(this).attr("fill", "violet");
+          })
+         .on("mouseout", function(){
+            d3.select(this).attr("fill", "steelblue");
+          })
+
+  var circletext = svg.selectAll("text")
+      .data(dataset)
+      .enter()
+        // same thing with the text labels, but they're displaced by textPad
+        .append("text")
+        .text(function(d, i) { return i+1; })
+        .attr("x", function(d) { return d[0]+textPad(radius); })
+        .attr("y", function(d) { return d[1]-textPad(radius); })
+        .attr("fill", "mediumvioletred")
+        .style("font-family", "sans-serif");
+
+  // this is hard-coded into the html. to make it dynamically, you could
+  // do d3.select('#parent-div').append('input[type=range]')
+
+  // on('input' ...) gives change at each tick
+  // on('change' ...) gives value at release
+
+  d3.select("input[type=range]").on("input", function() {
+     // inside the event handler, this refers to the parent element (the input)
+     radius = this.value;
+
+     // wow; you can change all the circles at once 
+     // let's replace this with an animated version:
+     // circles.attr("r", radius);
+     circles.transition()
+        .duration(1)
+        .attr("r", radius);
+
+     circletext.transition()
+        .duration(1)
+               .attr("x", function(d) { return d[0]+textPad(radius);})
+               .attr("y", function(d) { return d[1]-textPad(radius);});
+     });
+
+  d3.select("#button button").on("click", function() {
+      var randomx = [];
+      var randomy = [];
+
+      // regenerate dataset
+      for(i=0; i<dataset.length; i++) {
+        dataset[i][0] = Math.random()*(w-2*padMult*xPad)+padMult*xPad;
+        dataset[i][1] = Math.random()*(h-2*padMult*yPad)+padMult*yPad;
+      }
+        
+      // preface attr changes with .transition().duration(len) and you get
+       // animation!
+      circles.transition()
+          .duration(1500)
+          .attr("cx", function(d) { return d[0];})
+          .attr("cy", function(d) { return d[1];});
+
+
+      circletext.transition()
+          .duration(1500)
+          .attr("x", function(d) { return d[0]+textPad(radius);})
+          .attr("y", function(d) { return d[1]-textPad(radius);});
+  });
+
+  // this is only done once
+  circles.append("title")
+       .text(function(d) { return "Originally:\n(" + Math.round(d[0])
+       + "," + Math.round(h-padMult*yPad-d[1]) + ")"; });
+
+  // helper function
+  function textPad(radius) {
+    return (Number(radius)+Number(radPad))/Math.sqrt(2);
+  }
+
+
+})();
+</script>
+</div>
+
+
+</body></html>
