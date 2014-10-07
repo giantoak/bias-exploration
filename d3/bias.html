@@ -8,13 +8,19 @@ body {
 }
 
 #content {
-    margin-left: 30%;
-    width: 500px;
+    margin-left: 10%;
 }
 
-.subcontainer {
+#content > div{
     display: inline-block;
-    width: 600px;
+}
+
+#container {
+    vertical-align: top;
+    margin-top: 50px;
+}
+.subcontainer {
+    width: 400px;
 }
 
 #intro {
@@ -22,19 +28,23 @@ body {
 }
 
 #outputs {
-    height: 600px;
+    border-style: dotted;
+}
+
+.output {
     border-style: solid;
+    height: 400px;
+    width: 400px;
 }
 
 #inputs {
-    height: 200px;
+    height: 100px;
     border-style: dotted;
-    margin-right: 50px;
-    vertical-align: 100px;
+    margin-right: 30px;
 }
 
 .input-text {
-    margin: 50px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -68,12 +78,14 @@ body {
 <body>
 <div id ='content'>
 <h3 class='title'>Sliding adjustment of biased data</h3>
-<div id ='intro'>
-    We designed this tool to give analysts a sense for the hidden variables that mediate relationships between variables in a dataset. 
-</div>
 <div id='container'>
+    <div class='subcontainer' id ='intro'>
+        We designed this tool to give analysts a sense for the hidden variables that mediate relationships between variables in a dataset. 
+    </div>
     <div class='subcontainer' id='inputs'></div>
-    <div class='subcontainer' id='outputs'></div>
+</div>
+
+<div id='outputs'>
 </div>
 </div>
 <script src='scripts/biasplot.js'></script>
