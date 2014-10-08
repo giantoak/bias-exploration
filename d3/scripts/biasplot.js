@@ -1,7 +1,7 @@
 //TODO: make this into a closure
 function genScatterBias(data){
     "use strict";
-
+    
     // Load input sliders
     var input_text = d3.select('#inputs')
         .append('div')
@@ -49,78 +49,107 @@ function genScatterBias(data){
         return filtered;
     });
     
-    // get extremes and scales
-    var xextent  = d3.extent(data, function(d) { return parseFloat(d[c.x]); });
-    var yextent = d3.extent(data, function(d) { 
-        return parseFloat(d[c.y])/(1 + parseFloat(d[c.x]));
-    });
-    var cextent = d3.extent(data, function(d) { return parseFloat(d[c.extent]); });
-    
-    var xmin = xextent[0],
-        xmax = xextent[1],
-        ymin = yextent[0],
-        ymax = yextent[1],
-        cmin = cextent[0],
-        cmax = cextent[1];
-    
-    var sx = d3.scale.linear().domain([xmin, xmax]).range([pad.left*2, w-pad.right*2]);
-    var sy = d3.scale.linear().domain([ymin, ymax]).range([h-pad.bottom*2, pad.top*2]);
-    var sc = d3.scale.linear().domain([ymin, ymax]).range([h-pad.bottom*2, pad.top*2]);
 
-    // append output div; add static scatterplot
-    var output_div = d3.select('#outputs')
-        .append('div')
-        .attr('class', 'output');
-    
-    var svg_static = output_div
-        .append('svg:svg')
-        .attr('width', w)
-        .attr('height', h)
-        .attr('fill-opacity', alpha);
-    
-    svg_static.append("g")
-        .attr("class", "y axis");
+    function ScatterBias(selection) {
+        // append output div; add static scatterplot
+        // get extremes and scales
 
-    svg_static.append("g")
-        .attr("class", "x axis");
-    
-    var xAxis = d3.svg.axis()
-        .scale(sx)
-        .orient('bottom'),
-        yAxis = d3.svg.axis()
-        .scale(sy)
-        .orient('left');
-    
-    svg_static.select('.x.axis')
-        .attr('transform', 'translate(0, ' + (h - 2*pad.bottom) + ')')
-        .call(xAxis);
-    
-    svg_static.select('.y.axis')
-        .attr('transform', 'translate(' + (2*pad.left) + ',0)')
-        .call(yAxis);
+        selection.each(function(data, i) {
+            var xextent  = d3.extent(data, function(d) { return parseFloat(d[c.x]); });
+            var yextent = d3.extent(data, function(d) { 
+                return parseFloat(d[c.y])/(1 + parseFloat(d[c.x]));
+            });
+            var cextent = d3.extent(data, function(d) { return parseFloat(d[c.extent]); });
+            
+            var xmin = xextent[0],
+                xmax = xextent[1],
+                ymin = yextent[0],
+                ymax = yextent[1],
+                cmin = cextent[0],
+                cmax = cextent[1];
+            
+            var sx = d3.scale.linear()
+                    .domain([xmin, xmax])
+                    .range([pad.left*2, w-pad.right*2]),
+                sy = d3.scale.linear()
+                    .domain([ymin, ymax])
+                    .range([h-pad.bottom*2, pad.top*2]),
+                sc = d3.scale.linear()
+                    .domain([ymin, ymax])
+                    .range([h-pad.bottom*2, pad.top*2]);
+
+            var svg_static = d3.append('svg:svg')
+                .attr('width', w)
+                .attr('height', h)
+                .attr('fill-opacity', alpha);
+            
+            svg_static.append("g")
+                .attr("class", "y axis");
+
+            svg_static.append("g")
+                .attr("class", "x axis");
+            
+            var xAxis = d3.svg.axis()
+                .scale(sx)
+                .orient('bottom'),
+                yAxis = d3.svg.axis()
+                .scale(sy)
+                .orient('left');
+            
+            svg_static.select('.x.axis')
+                .attr('transform', 'translate(0, ' + (h - 2*pad.bottom) + ')')
+                .call(xAxis);
+            
+            svg_static.select('.y.axis')
+                .attr('transform', 'translate(' + (2*pad.left) + ',0)')
+                .call(yAxis);
 
 
-    // y-axis label. (0, h/2), rotated
-    svg_static.append('text')
-        .attr('x', pad.left)
-        .attr('y', pad.top)
-        .text(c.y);
-    
-    // x-axis label. (w/2, h)
-    svg_static.append('text')
-        .attr('x', w/2-pad.right)
-        .attr('y', h-pad.bottom)
-        .text(c.x);
+            // y-axis label. (0, h/2), rotated
+            svg_static.append('text')
+                .attr('x', pad.left)
+                .attr('y', pad.top)
+                .text(c.y);
+            
+            // x-axis label. (w/2, h)
+            svg_static.append('text')
+                .attr('x', w/2-pad.right)
+                .attr('y', h-pad.bottom)
+                .text(c.x);
 
-    var circles_static = svg_static.selectAll('circle')
-        .data(data)
-        .enter()
-            .append('svg:circle')
-            .attr('cx', function(d) { return sx(d[c.x]); })
-            .attr('cy', function(d) { return rebias(d, 0); })
-            .attr('r', r);
+            var circles_static = svg_static.selectAll('circle')
+                .data(data)
+                .enter()
+                    .append('svg:circle')
+                    .attr('cx', function(d) { return sx(d[c.x]); })
+                    .attr('cy', function(d) { return rebias(d, 0); })
+                    .attr('r', r);
+        });
+    }
+
+    ScatterBias.height = function(value) {
+        h = value;
+        return ScatterBias;
+    };
+    ScatterBias.width = function(value) {
+        w = value;
+        return ScatterBias;
+    };
+    ScatterBias.radius = function(value) {
+        r = value;
+        return ScatterBias;
+    };
+    ScatterBias.pad = function(value) {
+        pad = value;
+        return ScatterBias;
+    };
+    ScatterBias.columns = function(value) {
+        c = value;
+        return ScatterBias;
+    };
 
     
+
     // TODO: refactor scatterplot creation to avoid code duplication
     // draw moving bias scatterplot
     
