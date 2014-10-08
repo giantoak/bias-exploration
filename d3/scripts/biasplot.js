@@ -21,9 +21,9 @@ function genScatterBias(data){
 
     // TODO: have this display all possible inputs
     
-    //TODO: wrap input into div with text box?
     input.on('input', update_plot);
 
+    // class variables
     var w = 400,
         h = 400,
         r=3,
@@ -34,7 +34,9 @@ function genScatterBias(data){
             'y': 'b01001001',
             'ctrl': 'unemployment'};
     
-
+    
+    // strip nans from data
+    // TODO: have extra gutters on plot for nans
     function check_nan(item) {
         return (isNaN(parseFloat(item)));
     }
@@ -46,7 +48,8 @@ function genScatterBias(data){
         
         return filtered;
     });
-
+    
+    // get extremes and scales
     var xextent  = d3.extent(data, function(d) { return parseFloat(d[c.x]); });
     var yextent = d3.extent(data, function(d) { 
         return parseFloat(d[c.y])/(1 + parseFloat(d[c.x]));
@@ -60,11 +63,9 @@ function genScatterBias(data){
         cmin = cextent[0],
         cmax = cextent[1];
     
-    console.log(xmin, xmax, ymin, ymax);
     var sx = d3.scale.linear().domain([xmin, xmax]).range([pad.left*2, w-pad.right*2]);
     var sy = d3.scale.linear().domain([ymin, ymax]).range([h-pad.bottom*2, pad.top*2]);
     var sc = d3.scale.linear().domain([ymin, ymax]).range([h-pad.bottom*2, pad.top*2]);
-
 
     // append output div; add static scatterplot
     var output_div = d3.select('#outputs')
@@ -82,15 +83,6 @@ function genScatterBias(data){
 
     svg_static.append("g")
         .attr("class", "x axis");
-
-    
-
-    // initialize axes
-    svg.append("g")
-        .attr("class", "y axis");
-
-    svg.append("g")
-        .attr("class", "x axis");
     
     var xAxis = d3.svg.axis()
         .scale(sx)
@@ -99,39 +91,40 @@ function genScatterBias(data){
         .scale(sy)
         .orient('left');
     
-    svg.select('.x.axis')
+    svg_static.select('.x.axis')
         .attr('transform', 'translate(0, ' + (h - 2*pad.bottom) + ')')
         .call(xAxis);
     
-    svg.select('.y.axis')
+    svg_static.select('.y.axis')
         .attr('transform', 'translate(' + (2*pad.left) + ',0)')
         .call(yAxis);
 
 
     // y-axis label. (0, h/2), rotated
-    svg.append('text')
+    svg_static.append('text')
         .attr('x', pad.left)
         .attr('y', pad.top)
         .text(c.y);
     
     // x-axis label. (w/2, h)
-    svg.append('text')
+    svg_static.append('text')
         .attr('x', w/2-pad.right)
         .attr('y', h-pad.bottom)
         .text(c.x);
 
-    var circles = svg.selectAll('circle')
+    var circles_static = svg_static.selectAll('circle')
         .data(data)
         .enter()
-            .append('svg')
+            .append('svg:circle')
             .attr('cx', function(d) { return sx(d[c.x]); })
             .attr('cy', function(d) { return rebias(d, 0); })
             .attr('r', r);
 
     
-
+    // TODO: refactor scatterplot creation to avoid code duplication
     // draw moving bias scatterplot
     
+
     var output_div_moving = d3.select('#outputs')
         .append('div')
         .attr('class', 'output');
