@@ -15,7 +15,7 @@ function AdjustablePlot(data){
             bottom: 50
         };
 
-    var r=3,
+    var r=1,
         alpha=0.5;
     
     var xcol = '',
@@ -47,12 +47,8 @@ function AdjustablePlot(data){
         r = value;
         return genPlot;
     };
-    genPlot.pad = function(value) {
+    genPlot.padding = function(value) {
         pad = value;
-        return genPlot;
-    };
-    genPlot.columns = function(value) {
-        c = value;
         return genPlot;
     };
 
@@ -65,6 +61,7 @@ function AdjustablePlot(data){
             console.log('Warning: input slider not set');
         }
 
+        
         return genPlot;
     };
 
