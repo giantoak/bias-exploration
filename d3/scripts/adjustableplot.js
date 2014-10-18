@@ -15,7 +15,7 @@ function AdjustablePlot(data){
             bottom: 50
         };
 
-    var r=1,
+    var r=3,
         alpha=0.5;
     
     var xcol = '',
@@ -41,6 +41,10 @@ function AdjustablePlot(data){
     };
     genPlot.width = function(value) {
         dim.w = value;
+        return genPlot;
+    };
+    genPlot.alpha = function(value) {
+        alpha = value;
         return genPlot;
     };
     genPlot.radius = function(value) {
