@@ -15,8 +15,8 @@ function AdjustablePlot(data){
             bottom: 50
         };
 
-    var r=3,
-        alpha=0.5;
+    var r=2,
+        alpha=1.0;
     
     var xcol = '',
         ycol = '',
@@ -214,7 +214,8 @@ function AdjustablePlot(data){
                     .append('svg:circle')
                     .attr('cx', function(d) { return sx(d[xcol]); })
                     .attr('cy', function(d) { return sy(adjust(d, 0)); })
-                    .attr('r', r);
+                    .attr('r', r)
+                    .attr('opacity', alpha);
         });
     }
 
