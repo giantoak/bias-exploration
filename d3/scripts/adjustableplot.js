@@ -19,9 +19,8 @@ function AdjustablePlot(data){
     var r=2,
         alpha=1.0;
     
-    var xcol = '',
-        ycol = '',
-        betas = [],
+    var xcol, ycol,
+        betas = {},
         inputmap = {};
 
     var circles, sy, sx, sc;
@@ -63,18 +62,21 @@ function AdjustablePlot(data){
         //
         //  binds these columns to the inputs
         
-        for (var input in values) {
-            var elem = input.input,
+        for (var i in values) {
+            var input = values[i],
+                elem = input.input,
                 input_text = input.input_text,
                 col = input.column;
             
+            // set initial betas value
+            betas[col] = +elem.node().value;
+
             // identify these DOM elements for cross-reference
             inputmap[col] = { 
                 'input': elem,
                 'input_text': input_text
             };
             
-
             // event handler on the input should note which col
             try {
                 elem.datum(col);
@@ -100,6 +102,7 @@ function AdjustablePlot(data){
     };
     genPlot.y = function(value) {
         ycol = value;
+
         return genPlot;
     };
     genPlot.adjust = function(user_provided_func) {
@@ -109,33 +112,37 @@ function AdjustablePlot(data){
             float_row = {};
             
             // TODO: convert to float ahead of time
-            for (var elem in row) {
+            for (var elem in inputmap) {
                 float_row[elem] = parseFloat(row[elem]);
             }
-
             return user_provided_func(x, y, float_row, betas);
         };
+        
         return genPlot;
     };
 
     /************************************
      * helper functions
      ************************************/
+    function _check_nan(item) {
+        return (isNaN(parseFloat(item)));
+    }
 
     function redraw_plot() {
         // this is where the plot gets reweighted based off slider value
+
         circles.transition()
             .duration(100)
             .attr('cy', function (d) {
                 var adj_y = adjust(d);
                 return sy(adj_y);
             });
+
     }
 
     function on_change(col, i) {
-        console.log('on_change in ', col, this.value);
         betas[col] = this.value;
-        inputmap[col]['input_text'].text(betas[col]);
+        inputmap[col].input_text.text(betas[col]);
 
         redraw_plot();
     }
@@ -222,7 +229,9 @@ function AdjustablePlot(data){
                     .attr('cy', function(d) { return sy(adjust(d, 0)); })
                     .attr('r', r)
                     .attr('opacity', alpha);
+        redraw_plot();
         });
+
     }
 
     
