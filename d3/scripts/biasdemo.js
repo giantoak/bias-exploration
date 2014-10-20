@@ -1,7 +1,9 @@
 function make_input(id) {
     return  d3.select('#inputs')
     .append('div')
-    .attr('id', id)
+    .attr({
+        'id': id
+    })
     .append('input')
     .attr('class', 'input-ctrl')
     .attr({'type': 'range',
@@ -14,13 +16,17 @@ function make_input(id) {
 
 function make_input_text(id) {
     return d3.select('#' + id)
-    .append('span')
+    .append('div')
     .attr('class', 'input-text')
     .text(0);
 }
 
-// TODO: Find more natural OO-way of structuring the creation of
+// TODO: Find more natural way of structuring the creation of
 //       inputs
+//
+// TODO: Make stylesheet look less awkward
+//
+
 var input_unemployment = make_input('unemp'),
     input_population = make_input('pop'),
     input_text_unemployment = make_input_text('unemp'),

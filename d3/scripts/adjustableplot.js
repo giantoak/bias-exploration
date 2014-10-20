@@ -146,7 +146,25 @@ function AdjustablePlot(data){
 
         redraw_plot();
     }
-    
+
+    function set_scale_extents(data) {
+        function get_elem(d) {
+            return parseFloat(d[col]);
+        }
+        for (var col in inputmap) {
+            var ex = d3.extent(data, get_elem),
+            // TODO: Fix this math
+            min = Math.max(ex[0], sy.range()[0]),
+            max = Math.min(ex[1], sy.range()[1]);
+
+            console.log(inputmap, col);
+            inputmap[col].input.attr({
+                'min': min,
+                'max': max,
+                'step': (max - min)/1000
+            });
+        }
+    }
     /************************************
      * Function for generating plot
      ************************************/
@@ -178,12 +196,16 @@ function AdjustablePlot(data){
                 ymin = yextent[0],
                 ymax = yextent[1];
             
+
             sx = d3.scale.linear()
                 .domain([xmin, xmax])
                 .range([pad.left*2, dim.w-pad.right*2]);
             sy = d3.scale.linear()
                 .domain([ymin, ymax])
                 .range([dim.h-pad.bottom*2, pad.top*2]);
+            
+            // TODO: move this to a more appropriate location:
+            set_scale_extents(data);
 
             
             svg.append("g")
