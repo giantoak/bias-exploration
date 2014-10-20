@@ -1,3 +1,4 @@
+
 function AdjustablePlot(data){
     "use strict";
     /***************************************
@@ -20,7 +21,7 @@ function AdjustablePlot(data){
     
     var xcol = '',
         ycol = '',
-        ctrlcol = '';
+        betas = [];
 
     var input = null,
         input_text = null,
@@ -32,7 +33,7 @@ function AdjustablePlot(data){
     var adjust = null;
 
     /************************************
-     * Getter and setter functions
+     * setter functions
      ************************************/
 
     genPlot.height = function(value) {
@@ -56,15 +57,33 @@ function AdjustablePlot(data){
         return genPlot;
     };
 
-    genPlot.input = function(value) {
-        try {
-            value.on('input', update_plot);
-        }
-        catch (err) {
-            // TODO: make this a more robust error message
-            console.log('Warning: input slider not set');
-        }
+    genPlot.inputs = function(values) {
+        // takes a list of inputs, where each input is an object
+        //  {
+        //      'input': <a dom input element>,
+        //      'input_text': <a dom text element>
+        //      'column': 'a column to bind to'
+        //  }
+        //
+        //  binds these columns to the inputs
+        
+        for (var input in values) {
+            var elem = input['input'],
+                input_text = input['input_text'],
+                col = input['column'];
+            try {
+                var bound = new BoundInput()
+                            .col(col)
+                            .input(elem)
+                            .input_text(input_text)
+                            .bind();
+            }
 
+            catch (err) {
+            // TODO: make this a more robust error message
+                console.log(err.message);
+            }
+        }
         
         return genPlot;
     };
@@ -82,17 +101,17 @@ function AdjustablePlot(data){
         ycol = value;
         return genPlot;
     };
-    genPlot.ctrl = function(value) {
-        ctrlcol = value;
-        return genPlot;
-    };
     genPlot.adjust = function(user_provided_func) {
-        adjust = function (row, beta) {
+        adjust = function (row) {
             var x = parseFloat(row[xcol]),
             y = parseFloat(row[ycol]),
-            ctrl = parseFloat(row[ctrlcol]);
+            float_row = {};
 
-            return user_provided_func(x, y, ctrl, beta);
+            for (var elem in row) {
+                float_row[elem] = parseFloat(row[elem]);
+            }
+
+            return user_provided_func(x, y, float_row, betas);
         };
         return genPlot;
     };
@@ -108,23 +127,62 @@ function AdjustablePlot(data){
     function update_plot() {
         // this is where the plot gets reweighted based off slider value
         
-        var slider_val = parseFloat(this.value);
-
-        try {
-            input_text.text(slider_val);
-        }
-        catch (err) {
-            console.log('Warning: input_text not set');
-        }
         
         circles.transition()
             .duration(100)
             .attr('cy', function (d) {
-                var adj_y = adjust(d, slider_val);
+                var adj_y = adjust(d);
                 return sy(adj_y);
             });
     }
     
+    /*********************************************
+    * Function for binding data from "betas" with a DOM element
+    *********************************************/
+    function BoundInput() {
+        var colname, input, input_text;
+        
+        bind.col = function(col) {
+            colname = col;
+            return bind;
+        };
+
+        bind.input = function(elem) {
+            input = elem;
+            return bind;
+        };
+
+        bind.input_text = function(elem) {
+            input_text = elem;
+            return bind;
+        };
+
+        function bind() {
+            input.addEventListener("input", this, false);
+        }
+
+        return bind;
+    }
+
+    BoundInput.prototype.handleEvent = function(event) {
+        console.log("handling event: ", event.type);
+        switch (event.type) {
+            case "input": this.change(this.input.value);
+        }
+    };
+
+    BoundInput.prototype.change = function(value) {
+        console.log("handling event change: ", value);
+        betas[colname] = value;
+        input.value = value;
+        
+        try {
+            input_text.text(value);
+        }
+        catch (err) {
+        }
+        genPlot.update_plot();
+    };
     
     /************************************
      * Function for generating plot
@@ -137,8 +195,8 @@ function AdjustablePlot(data){
         svg.each(function(data, i) {
             data = data.filter(function (d) {
                 var filtered = (! (_check_nan(d[xcol]) || 
-                        _check_nan(d[ycol]) || 
-                        _check_nan(d[ctrlcol])));
+                        _check_nan(d[ycol])));
+                // XXX removed check for ctrl cols; reimplement?
                 
                 
                 return filtered;
@@ -148,9 +206,6 @@ function AdjustablePlot(data){
             }),
             yextent = d3.extent(data, function(d) { 
                 return parseFloat(d[ycol])/(1 + parseFloat(d[xcol]));
-            }),
-            cextent = d3.extent(data, function(d) { 
-                return parseFloat(d[ctrlcol]); 
             });
             
             var columns = Object.keys(data[0]);
@@ -158,17 +213,12 @@ function AdjustablePlot(data){
             var xmin = xextent[0],
                 xmax = xextent[1],
                 ymin = yextent[0],
-                ymax = yextent[1],
-                cmin = cextent[0],
-                cmax = cextent[1];
+                ymax = yextent[1];
             
             sx = d3.scale.linear()
                 .domain([xmin, xmax])
                 .range([pad.left*2, dim.w-pad.right*2]);
             sy = d3.scale.linear()
-                .domain([ymin, ymax])
-                .range([dim.h-pad.bottom*2, pad.top*2]);
-            sc = d3.scale.linear()
                 .domain([ymin, ymax])
                 .range([dim.h-pad.bottom*2, pad.top*2]);
 

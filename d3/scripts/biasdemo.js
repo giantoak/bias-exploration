@@ -23,19 +23,23 @@ var svg = output_div
     .attr('height', 400)
     .attr('fill-opacity', 1);
 
-var rebias = function (x, y, ctrl, beta) {
-    var denom = 1 + x + beta*ctrl;
-    var adj_y = y / denom;
+// desired interface:
+var rebias2 = function(x, y, data, betas) {
+    console.log('in rebias2; ', x, y, data, betas);
+    var denom = 1 + x + betas.unemployment*data.unemployment;
+    var adj_y = y/denom;
     return adj_y;
 };
 
 var plot = AdjustablePlot()
-            .input(input)
-            .input_text(input_text)
-            .adjust(rebias)
+            .inputs([{
+                'input': input,
+                'input_text': input_text,
+                'column': 'unemployment'
+            }])
+            .adjust(rebias2)
             .x('unemployment')
-            .y('b01001001')
-            .ctrl('unemployment');
+            .y('b01001001');
 
 d3.csv('../data/region_level_acs_crime.csv', function(d) {
     svg.datum(d)
