@@ -21,14 +21,10 @@ function AdjustablePlot(data){
     
     var xcol = '',
         ycol = '',
-        betas = [];
+        betas = [],
+        inputmap = {};
 
-    var input = null,
-        input_text = null,
-        circles = null,
-        sy = null,
-        sx = null,
-        sc = null;
+    var circles, sy, sx, sc;
     
     var adjust = null;
 
@@ -68,17 +64,22 @@ function AdjustablePlot(data){
         //  binds these columns to the inputs
         
         for (var input in values) {
-            var elem = input['input'],
-                input_text = input['input_text'],
-                col = input['column'];
-            try {
-                var bound = new BoundInput()
-                            .col(col)
-                            .input(elem)
-                            .input_text(input_text)
-                            .bind();
-            }
+            var elem = input.input,
+                input_text = input.input_text,
+                col = input.column;
+            
+            // identify these DOM elements for cross-reference
+            inputmap[col] = { 
+                'input': elem,
+                'input_text': input_text
+            };
+            
 
+            // event handler on the input should note which col
+            try {
+                elem.datum(col);
+                elem.on('input', on_change);
+            }
             catch (err) {
             // TODO: make this a more robust error message
                 console.log(err.message);
@@ -106,7 +107,8 @@ function AdjustablePlot(data){
             var x = parseFloat(row[xcol]),
             y = parseFloat(row[ycol]),
             float_row = {};
-
+            
+            // TODO: convert to float ahead of time
             for (var elem in row) {
                 float_row[elem] = parseFloat(row[elem]);
             }
@@ -120,14 +122,8 @@ function AdjustablePlot(data){
      * helper functions
      ************************************/
 
-    function _check_nan(item) {
-        return (isNaN(parseFloat(item)));
-    }
-    
-    function update_plot() {
+    function redraw_plot() {
         // this is where the plot gets reweighted based off slider value
-        
-        
         circles.transition()
             .duration(100)
             .attr('cy', function (d) {
@@ -135,54 +131,14 @@ function AdjustablePlot(data){
                 return sy(adj_y);
             });
     }
-    
-    /*********************************************
-    * Function for binding data from "betas" with a DOM element
-    *********************************************/
-    function BoundInput() {
-        var colname, input, input_text;
-        
-        bind.col = function(col) {
-            colname = col;
-            return bind;
-        };
 
-        bind.input = function(elem) {
-            input = elem;
-            return bind;
-        };
+    function on_change(col, i) {
+        console.log('on_change in ', col, this.value);
+        betas[col] = this.value;
+        inputmap[col]['input_text'].text(betas[col]);
 
-        bind.input_text = function(elem) {
-            input_text = elem;
-            return bind;
-        };
-
-        function bind() {
-            input.addEventListener("input", this, false);
-        }
-
-        return bind;
+        redraw_plot();
     }
-
-    BoundInput.prototype.handleEvent = function(event) {
-        console.log("handling event: ", event.type);
-        switch (event.type) {
-            case "input": this.change(this.input.value);
-        }
-    };
-
-    BoundInput.prototype.change = function(value) {
-        console.log("handling event change: ", value);
-        betas[colname] = value;
-        input.value = value;
-        
-        try {
-            input_text.text(value);
-        }
-        catch (err) {
-        }
-        genPlot.update_plot();
-    };
     
     /************************************
      * Function for generating plot
