@@ -147,7 +147,7 @@ function AdjustablePlot(data){
                 return parseFloat(d[xcol]); 
             }),
             yextent = d3.extent(data, function(d) { 
-                return parseFloat(d[ycol])/(1 + parseFloat(d[xcol]));
+                return parseFloat(d[ycol])/(1 + parseFloat(d[xcol])/20);
             }),
             cextent = d3.extent(data, function(d) { 
                 return parseFloat(d[ctrlcol]); 
