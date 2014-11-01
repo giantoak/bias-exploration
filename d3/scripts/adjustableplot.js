@@ -146,9 +146,6 @@ function AdjustablePlot(data){
             var xextent  = d3.extent(data, function(d) { 
                 return parseFloat(d[xcol]); 
             }),
-            yextent = d3.extent(data, function(d) { 
-                return parseFloat(d[ycol])/(1 + parseFloat(d[xcol])/20);
-            }),
             cextent = d3.extent(data, function(d) { 
                 return parseFloat(d[ctrlcol]); 
             });
@@ -157,11 +154,24 @@ function AdjustablePlot(data){
 
             var xmin = xextent[0],
                 xmax = xextent[1],
-                ymin = yextent[0],
-                ymax = yextent[1],
+                //ymin = yextent[0],
+                //ymax = yextent[1],
                 cmin = cextent[0],
                 cmax = cextent[1];
+            console.log('cmax ' + cmax)
+            console.log('cmin ' + cmin)
+            console.log('xmax ' + xmax)
+            console.log('xmin ' + xmin)
             
+            var ymin = d3.extent(data, function(d) { 
+                return parseFloat(d[ycol])/(1 + parseFloat(d[xcol] * cmax / 1));
+            })[0];
+            var ymax = d3.extent(data, function(d) { 
+                return parseFloat(d[ycol])/(1 + parseFloat(d[xcol] * cmin / 20));
+            })[1];
+            console.log('ymax ' + ymax)
+            console.log('ymin ' + ymin)
+
             sx = d3.scale.linear()
                 .domain([xmin, xmax])
                 .range([pad.left*2, dim.w-pad.right*2]);
