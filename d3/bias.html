@@ -83,24 +83,38 @@ body {
         We designed this tool to give analysts a sense for the hidden variables that mediate relationships between variables in a dataset. 
         <p>
         This particular graph allows the exploration of how the
-        relationship between unemployment and city size (logged) is
-        mediated by the educational makeup of a city. 
-        <p> Unemployment tends to
-        be concentrated in large cities, which attract those from smaller
-        places looking for jobs and experience larger business cycles.
-        This suggests a positive slope to the
-        relationship between unemployment.  
+        relationship between number of logged ads in a city and the logged
+        city population is mediated by local education levels. 
+
+        <p> Generally speaking, we know that more educated people tend to
+        live in big cities. So if we think places with more education are
+        less likely to procure sex services online, then every sex ad in a
+        high education place is more informative adn should be upweighted
+        
         <p>
-        Generally, since unemployment is negatively related to education
-        (i.e. unemployment is lower in more highly educated places), and
-        since the highly educated tend to live in larger cities, the
-        relationship between unemployment and population is even stronger
-        than it initially appears.
-        <p> You can explore this relationship by increasing the weight on educational
-        composition, and watching the effect on the slope. 
+        The interpretation of an increase in slope magnitude (ie. making
+        the slider value more negative) increasing the slope of the
+        counts/population relationship (which appears to be happening) is
+        that places which are more educated tend to have relatively more
+        backpage ads per capita.
+        <!--<p> Education likely -->
+        <!--We know from other work that unemployment is related to the-->
+        <!--ability to extract information from profiles. -->
+        <!--be concentrated in large cities, which attract those from smaller-->
+        <!--places looking for jobs and experience larger business cycles.-->
+        <!--This suggests a positive slope to the-->
+        <!--relationship between unemployment.  -->
+        <!--<p>-->
+        <!--Generally, since unemployment is negatively related to education-->
+        <!--(i.e. unemployment is lower in more highly educated places), and-->
+        <!--since the highly educated tend to live in larger cities, the-->
+        <!--relationship between unemployment and population is even stronger-->
+        <!--than it initially appears.-->
+        <!--<p> You can explore this relationship by increasing the weight on educational-->
+        <!--composition, and watching the effect on the slope. -->
     </div>
     <div class='subcontainer' id='inputs'></div>
-    <p> Weight on Educational Composition
+    <p> Weight Education Variable
     <!--SAM TODO: Stick this label somewhere better-->
 </div>
 
